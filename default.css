@@ -1,0 +1,399 @@
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+object,
+iframe,
+pre,
+code,
+p,
+blockquote,
+form,
+fieldset,
+legend,
+table,
+th,
+td,
+caption,
+tbody,
+tfoot,
+thead,
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+audio,
+video,
+canvas {
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+figure,
+figcaption,
+footer,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+a {
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+}
+li {
+  list-style: none;
+}
+fieldset {
+  border: none;
+}
+input,
+textarea,
+select,
+label {
+  font-family: inherit;
+  font-size: 100%;
+  margin-bottom: 0;
+  margin-top: 0;
+  padding-bottom: 0;
+  padding-top: 0;
+  vertical-align: middle;
+}
+textarea {
+  overflow: auto;
+}
+legend {
+  display: none;
+}
+img {
+  border: none;
+  vertical-align: top;
+}
+object {
+  outline: none;
+  vertical-align: middle;
+}
+em,
+strong {
+  font-style: normal;
+  font-weight: bold;
+}
+small {
+  font-size: 100%;
+}
+abbr,
+acronym {
+  border: none;
+  font-variant: normal;
+}
+.boxRight {
+  float: right !important;
+}
+#i18 {
+  z-index: 2005;
+  left: 10px;
+  position: fixed;
+  top: calc(var(--information-banner-height, 0px) + 10px);
+}
+#i18 .lang {
+  float: left;
+  margin: 0 5px 0 0;
+  position: relative;
+}
+#i18 .lang:before {
+  background: url("{BASEURL}/img/shop/arrow.gif") no-repeat;
+  background-size: 10px 7px;
+  content: "";
+  height: 7px;
+  position: absolute;
+  right: 13px;
+  top: 12px;
+  width: 10px;
+}
+#i18 .currency {
+  float: left;
+  position: relative;
+}
+#i18 .currency:before {
+  background: url("{BASEURL}/img/shop/arrow.gif") no-repeat;
+  background-size: 10px 7px;
+  content: "";
+  height: 7px;
+  position: absolute;
+  right: 13px;
+  top: 12px;
+  width: 10px;
+}
+#i18 select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  color: #000;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 11px;
+  line-height: 18px;
+  min-width: inherit;
+  padding: 5px 25px 5px 10px;
+  vertical-align: middle;
+}
+#privacy,
+#law {
+  background-color: #fff;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, "Hiragino Kaku Gothic ProN",
+    "ヒラギノ角ゴ Pro W3", "Meiryo", sans-serif;
+  font-size: 13px;
+  line-height: 1.6em;
+  margin: 0 auto;
+  padding: 30px 40px 40px;
+  text-align: left;
+  width: 960px;
+}
+#privacy h2,
+#law h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 20px 0 0;
+  padding: 0 0 20px;
+}
+#privacy h3,
+#privacy dt {
+  font-weight: bold;
+  margin: 15px 0 8px;
+}
+#privacy .privacy_intro {
+  margin: 0 0 20px;
+}
+#law h3 {
+  font-weight: bold;
+  margin: 20px 0 5px;
+}
+#law .law_attention {
+  padding: 10px;
+  margin-top: 12px;
+  line-height: 1.5;
+  background-color: #f8f9fa;
+}
+@media (min-width: 769px) {
+  #law .law_attention {
+    padding: 16px;
+    margin-top: 16px;
+    line-height: 1.6;
+  }
+}
+#law .atobaraiTerm {
+  margin: 20px 0;
+}
+#law .atobaraiTerm .atobaraiTerm__title {
+  margin-bottom: 8px;
+}
+#law .atobaraiTerm .atobaraiTerm__body {
+  padding-left: 20px;
+}
+#law .atobaraiTerm p {
+  font-size: 100%;
+  line-height: 1.5;
+  margin: 0 0 10px;
+}
+.itemCb #cboxPrevious {
+  background: url("{BASEURL}/i/controls.png") no-repeat 0 0;
+  bottom: 0;
+  height: 20px;
+  left: 0;
+  overflow: visible;
+  text-indent: -9999px;
+  width: 20px;
+}
+.itemCb #cboxNext {
+  background: url("{BASEURL}/i/controls.png") no-repeat -22px 0;
+  bottom: 0;
+  height: 20px;
+  left: 30px !important;
+  overflow: visible;
+  text-indent: -9999px;
+  width: 20px;
+}
+.itemCb #cboxClose {
+  background: url("{BASEURL}/i/controls.png") no-repeat -52px 0;
+  height: 20px;
+  overflow: visible;
+  text-indent: -9999px;
+  width: 20px;
+}
+.itemCb #cboxContent button {
+  border: none;
+}
+.itemCb:focus {
+  outline: none;
+}
+a.cboxElement:focus {
+  outline: none;
+}
+.clearfix {
+  zoom: 1;
+}
+.clearfix:after {
+  clear: both;
+  content: "";
+  display: block;
+}
+.show {
+  display: block !important;
+}
+.hide {
+  display: none !important;
+}
+.overlayBackground {
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  display: none;
+  height: 100%;
+  left: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+#baseMenu {
+  box-sizing: border-box;
+  position: fixed;
+  right: 25px;
+  top: calc(var(--information-banner-height, 0px) + 5px);
+  z-index: 2002;
+}
+#baseMenu > ul > li {
+  float: left;
+  list-style: none;
+}
+#baseMenu > ul > li.base {
+  margin: 0 10px 0 0;
+}
+#baseMenu > ul > li a {
+  background-color: #fff;
+  border-radius: 3px;
+  box-shadow: 0 1px 0 1px rgba(150, 150, 150, 0.4);
+  cursor: pointer;
+  display: block;
+  -webkit-font-smoothing: antialiased;
+  margin: 1px 0 0;
+  padding: 5px 15px;
+  text-decoration: none;
+  -webkit-transition-duration: 0.2s;
+  -moz-transition-duration: 0.2s;
+  -o-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+}
+#baseMenu > ul > li a:hover {
+  box-shadow: 0 0 0 1px rgba(150, 150, 150, 0.2);
+  padding: 6px 15px 4px;
+}
+@font-face {
+  font-family: "baseicon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("https://static.thebase.in/font/v1/baseicon.eot?317xhh");
+  src: url("https://static.thebase.in/font/v1/baseicon.eot?317xhh#iefix")
+      format("embedded-opentype"),
+    url("https://static.thebase.in/font/v1/baseicon.ttf?317xhh")
+      format("truetype"),
+    url("https://static.thebase.in/font/v1/baseicon.woff?317xhh") format("woff"),
+    url("https://static.thebase.in/font/v1/baseicon.svg?317xhh#baseicon")
+      format("svg");
+}
+@font-face {
+  font-family: "shopicon";
+  font-style: normal;
+  font-weight: normal;
+  src: url("https://static.thebase.in/font/v1/shopicon.eot?317xhh");
+  src: url("https://static.thebase.in/font/v1/shopicon.eot?317xhh#iefix")
+      format("embedded-opentype"),
+    url("https://static.thebase.in/font/v1/shopicon.ttf?317xhh")
+      format("truetype"),
+    url("https://static.thebase.in/font/v1/shopicon.woff?317xhh") format("woff"),
+    url("https://static.thebase.in/font/v1/shopicon.svg?317xhh#baseicon")
+      format("svg");
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  font-family: "baseicon" !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+.icon-cart:before {
+  content: "\e900";
+}
+.icon-search:before {
+  content: "\e912";
+}
+.icon-information:before {
+  content: "\e919";
+}
+.icon-tipi:before {
+  content: "\e922";
+}
+.icon-pin:before {
+  content: "\e929";
+}
