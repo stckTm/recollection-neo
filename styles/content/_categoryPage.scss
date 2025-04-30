@@ -18,7 +18,7 @@
     }
 
     .breadcrumb-container {
-        background-color: rgba(255, 255, 255, 0.9);
+        background-color: $cBackground;
         width: 90%;
 
         position: fixed;
@@ -37,13 +37,13 @@
             gap: 10px;
 
             li {
-                @include fontSmall;
+                @include fontSmaller;
                 display: flex;
                 align-items: center;
                 padding: 0;
 
                 &:last-child {
-                    @include subTitle;
+                    @include fontSmall;
                 }
 
                 &:not(:last-child)::after {

@@ -87,6 +87,9 @@
         text-align: start;
         width: 90%;
         margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
 
         h1 {
             margin: 20px 0;
@@ -96,7 +99,7 @@
     .purchase {
         width: 90%;
         margin: 0 auto;
-
+        // height: 80px;
         label,
         select {
             @include fontSmaller;
@@ -125,9 +128,9 @@
             @include fontSmall;
             text-align: center;
             width: 100%;
-            height: 5vh;
+            height: 40px;
             margin: 0 auto;
-            // margin-top: 20px;
+            margin: 10px 0;
             border: solid 1px $cBlack;
             text-align: center;
 
@@ -230,10 +233,16 @@
             border-bottom: solid 1px $cBlack;
         }
 
-        img {
-            width: 90%;
-            margin-bottom: 50px;
+        .appsItemDetailCustomTag_image {
+            width: 90% !important;
+            margin: 0 auto !important;
+            padding: 20px 0 !important;
         }
+
+        // img {
+        //     width: 90%;
+        //     margin-bottom: 50px;
+        // }
     }
 
     .review01 {
@@ -270,6 +279,7 @@
                 }
                 .purchase {
                     height: 10vh;
+                    min-height: 60px;
                 }
             }
         }

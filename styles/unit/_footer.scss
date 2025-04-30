@@ -1,6 +1,7 @@
 @use "../variables/variables" as *;
 
 footer {
+    background-color: $cBackground !important;
     // background-color: $cWhite;
     font-size: small;
     display: flex;

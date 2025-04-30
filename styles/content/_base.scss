@@ -1,7 +1,5 @@
 @use "../variables/variables" as *;
 
-
-
 .productList {
     width: 100%;
     display: flex;
@@ -11,7 +9,7 @@
     li {
         // padding: 30px 20px;
         width: 50%;
-        padding: 15px;
+        padding: 3vh;
     }
 
     &__item {
@@ -41,7 +39,7 @@
         justify-content: space-around;
         height: 100%;
         width: 100%;
-        color: $cWhite;
+        color: $cBackground;
         padding: 15px;
         text-align: start;
         font-weight: 100;
@@ -50,8 +48,14 @@
 
         text-align: start;
 
+        h2 {
+            @include fontSmall;
+            line-height: 1.5;
+        }
+
         p {
             text-align: end;
+            @include fontSmall;
         }
 
         &:hover {
@@ -60,6 +64,10 @@
 
         &.soldOut {
             opacity: 1;
+
+            p {
+                text-align: center;
+            }
         }
     }
 }

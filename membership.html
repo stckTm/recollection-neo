@@ -1,560 +1,574 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>{PageTitle}</title>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{PageTitle}</title>
 
-    <!-- {FaviconTag} -->
-    <!-- {CanonicalTag} -->
+        <!-- {FaviconTag} -->
+        <!-- {CanonicalTag} -->
 
-    <!-- {block:ItemPage} -->
-    <!-- {MetaItemInfoTag} -->
-    <!-- {/block:ItemPage} -->
+        <!-- {block:ItemPage} -->
+        <!-- {MetaItemInfoTag} -->
+        <!-- {/block:ItemPage} -->
 
-    <!-- {block:NotItemPage} -->
-    <!-- {MetaShopInfoTag} -->
-    <!-- {/block:NotItemPage} -->
+        <!-- {block:NotItemPage} -->
+        <!-- {MetaShopInfoTag} -->
+        <!-- {/block:NotItemPage} -->
 
-    <!-- {block:IndexPage} -->
-    <!-- {HeadLinkNextPrevTag} -->
-    <!-- トップページのみに出力したいheadコンテンツをここに記述 -->
-    <!-- {/block:IndexPage} -->
+        <!-- {block:IndexPage} -->
+        <!-- {HeadLinkNextPrevTag} -->
+        <!-- トップページのみに出力したいheadコンテンツをここに記述 -->
+        <!-- {/block:IndexPage} -->
 
-    <!-- {block:NotIndexPage} -->
-    <!-- トップページ以外に出力したいheadコンテンツをここに記述 -->
-    <!-- {/block:NotIndexPage} -->
+        <!-- {block:NotIndexPage} -->
+        <!-- トップページ以外に出力したいheadコンテンツをここに記述 -->
+        <!-- {/block:NotIndexPage} -->
 
-    <link rel="stylesheet" href="destyle.css" />
-    <link rel="stylesheet" href="styles/main.css" />
-
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Kaisei+Opti&family=Kiwi+Maru&family=Klee+One&family=Kosugi&family=Kosugi+Maru&family=M+PLUS+1:wght@100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Sawarabi+Gothic&family=Sawarabi+Mincho&family=Shippori+Mincho&family=Yomogi&family=Zen+Kaku+Gothic+New&family=Zen+Kurenaido&family=Zen+Maru+Gothic&family=Zen+Old+Mincho&display=swap"
-      rel="stylesheet"
-    />
+        <link rel="stylesheet" href="destyle.css" />
+        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Noto+Serif+JP:wght@200..900&family=Quicksand:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Google Tag 
 
     <!-- {BackgroundTag} -->
-    <!-- {GoogleAnalyticsTag} -->
-  </head>
-  <body>
-    <header>
-      <div class="toggle-btn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <h1 class="logo">
-        <!-- <a href="{IndexPageURL}">{LogoTag}</a> -->
-
-        <a href="https://ショップURL">
-          <span class="logoText">recollection</span>
-        </a>
-      </h1>
-
-      <!-- {BASEMenuTag} -->
-      <div id="baseMenu">
-        <ul class="clearfix">
-          <li class="base" style="visibility: hidden">
-            <!--  -->
-            <a
-              target="_blank"
-              rel="nofollow"
-              href="https://thebase.com?from=recollevin-base-shop&amp;p=shop"
-              ><img
-                src="/img/shop/base.png"
-                alt="ネットショップを開設するならBASE"
-                title="BASE"
-                height="30"
-            /></a>
-          </li>
-          <li class="cart">
-            <a href="https://recollevin.base.shop/cart/add/recollevin-base-shop"
-              ><img src="/img/shop/cart.png" alt="shopping cart" height="30"
-            /></a>
-          </li>
-        </ul>
-      </div>
-      <nav style+>
-        <ul class="navLinks">
-          <li><a href="{IndexPageURL}">Home</a></li>
-          <li>
-            <div class="navLinks-category">
-              <p>Products</p>
-              <div class="triangle"></div>
+        <!-- {GoogleAnalyticsTag} -->
+    </head>
+    <body>
+        <header>
+            <div class="toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
-          </li>
-          <li><a href="{AboutPageURL}">About</a></li>
-          <li><a href="###">Blog</a></li>
-          <li><a href="{ContactPageURL}">Contact</a></li>
-          <li><a href="###">Instagram</a></li>
-        </ul>
-        <div class="instagram">
-          <a href="http://">
-            <img src="img/instagram.png" alt="" />
-          </a>
+            <h1 class="logo">
+                <!-- <a href="{IndexPageURL}">{LogoTag}</a> -->
+
+                <a href="https://ショップURL">
+                    <span class="logoText">recollection</span>
+                </a>
+            </h1>
+
+            <!-- {BASEMenuTag} -->
+            <div id="baseMenu">
+                <ul class="clearfix">
+                    <li class="base" style="visibility: hidden">
+                        <!--  -->
+                        <a
+                            target="_blank"
+                            rel="nofollow"
+                            href="https://thebase.com?from=recollevin-base-shop&amp;p=shop"
+                            ><img
+                                src="/img/shop/base.png"
+                                alt="ネットショップを開設するならBASE"
+                                title="BASE"
+                                height="30"
+                        /></a>
+                    </li>
+                    <li class="cart">
+                        <a
+                            href="https://recollevin.base.shop/cart/add/recollevin-base-shop"
+                            ><img
+                                src="/img/shop/cart.png"
+                                alt="shopping cart"
+                                height="30"
+                        /></a>
+                    </li>
+                </ul>
+            </div>
+            <nav style+>
+                <ul class="navLinks">
+                    <li><a href="{IndexPageURL}">Home</a></li>
+                    <li>
+                        <div class="navLinks-category">
+                            <p>Products</p>
+                            <div class="triangle"></div>
+                        </div>
+                    </li>
+                    <li><a href="{AboutPageURL}">About</a></li>
+                    <li><a href="###">Blog</a></li>
+                    <li><a href="{ContactPageURL}">Contact</a></li>
+                    <li><a href="###">Instagram</a></li>
+                </ul>
+                <div class="instagram">
+                    <a href="http://">
+                        <img src="img/instagram.png" alt="" />
+                    </a>
+                </div>
+
+                <!-- {block:AppsItemCategory} -->
+                <!-- {AppsItemCategoryCategoriesTag} -->
+                <ul id="appsItemCategoryTag">
+                    <li class="appsItemCategoryTag_child">
+                        <a
+                            href="{大カテゴリページへのリンク}"
+                            class="mainHeaderNavColor"
+                            >Brands</a
+                        >
+                        <ul class="appsItemCategoryTag_lowerchild">
+                            <li>
+                                <a
+                                    href="{中カテゴリページへのリンク}"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >ARNYS PARIS</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="{中カテゴリページへのリンク}"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >BONEVILLE</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="{中カテゴリページへのリンク}"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >CELINE</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="{中カテゴリページへのリンク}"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >- - - - - - -
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="{中カテゴリページへのリンク}"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >- - - - - - -
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="{中カテゴリページへのリンク}"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >- - - - - - -
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="{中カテゴリページへのリンク}"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >- - - - - - -
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="{中カテゴリページへのリンク}"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >- - - - - - -
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="{中カテゴリページへのリンク}"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >- - - - - - -
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="{中カテゴリページへのリンク}"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >- - - - - - -
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="{中カテゴリページへのリンク}"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >- - - - - - -
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="{中カテゴリページへのリンク}"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >- - - - - - -
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="{中カテゴリページへのリンク}"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >- - - - - - -
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="{中カテゴリページへのリンク}"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >- - - - - - -
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="appsItemCategoryTag_child">
+                        <a
+                            href="{大カテゴリページへのリンク}"
+                            class="mainHeaderNavColor"
+                            >Items</a
+                        >
+                        <ul class="appsItemCategoryTag_lowerchild">
+                            <li>
+                                <a
+                                    href="{中カテゴリページへのリンク}"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >- - - - - - -
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="{中カテゴリページへのリンク}"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >- - - - - - -
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="{中カテゴリページへのリンク}"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >- - - - - - -
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="{中カテゴリページへのリンク}"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >- - - - - - -
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="{中カテゴリページへのリンク}"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >- - - - - - -
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="{中カテゴリページへのリンク}"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >- - - - - - -
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="{中カテゴリページへのリンク}"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >- - - - - - -
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="{中カテゴリページへのリンク}"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >- - - - - - -
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="{中カテゴリページへのリンク}"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >- - - - - - -
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="{中カテゴリページへのリンク}"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >- - - - - - -
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="{中カテゴリページへのリンク}"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >- - - - - - -
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="{中カテゴリページへのリンク}"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >- - - - - - -
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="{中カテゴリページへのリンク}"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >- - - - - - -
+                                </a>
+                            </li>
+                            <li>
+                                <a
+                                    href="{中カテゴリページへのリンク}"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >- - - - - - -
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <!-- {/block:AppsItemCategory} -->
+            </nav>
+            <div id="mask"></div>
+        </header>
+
+        <div id="page" class="membership">
+            <div class="guide">
+                <div class="img-wrapper">
+                    <img
+                        class="img"
+                        src="https://membership-app.akamaized.net/images/origin/recollevin-base-shop/main/803b3940-a015-4f6c-be79-7d8e8ee175f5.png"
+                        alt="メンバーシップのトップ画像"
+                    />
+                </div>
+                <section class="content">
+                    <h2 class="heading">RC MILE CLUB</h2>
+                    <div class="description">
+                        <p>
+                            メンバーシップ特典としてはお買い上げ毎（3%還元）にポイントを貯めて特典と交換となります。<br />
+                            <br />
+                            <br />
+                            例）34000円お買い上げ頂くと<br />
+                            34000×0.03=1020 ⇒1020ポイント<br />
+                            <br />
+                            特典・・ポイントと同じ金額のクーポンに交換<br />
+                            例)1000ポイント→1000円分のクーポンに交換<br />
+                            <br />
+                            メンバーポイント<br />
+                            メンバーポイントとは、このショップ独自のポイントになります。<br />
+                            ポイントはメンバーシップに入会しているお客様だけに付与され、特典交換時にご利用いただけます。<br />
+                            購入金額のうち、3％が付与されます。
+                        </p>
+                    </div>
+                </section>
+
+                <section class="about-point">
+                    <h2 class="heading-point">RC MILE CLUB</h2>
+                    <ul class="description">
+                        <li class="description-details">
+                            RC MILE
+                            CLUBとは、このショップ独自のポイントになります。
+                        </li>
+                        <li class="description-details">
+                            ポイントはメンバーシップに入会しているお客様だけに付与され、特典交換時にご利用いただけます。
+                        </li>
+                        <li class="description-details">
+                            購入金額のうち、3％が付与されます。
+                        </li>
+                    </ul>
+                </section>
+
+                <div class="reward-list">
+                    <h3 class="title">特典一覧</h3>
+                    <hr class="bar" />
+                    <p class="description">
+                        RC MILE
+                        CLUBが貯まったら、商品購入時に特典申請することができます。
+                    </p>
+                    <div class="reward-card-list">
+                        <div class="reward-card">
+                            <a
+                                href="https://base-public.akamaized.net/membership-app/images/origin/recollevin-base-shop/rewards/1c28e445-bf1c-4f13-91dd-419e8b0b0f78.jpeg"
+                                target="_blank"
+                            >
+                                <img
+                                    class="reward-image"
+                                    src="https://base-public.akamaized.net/membership-app/images/origin/recollevin-base-shop/rewards/1c28e445-bf1c-4f13-91dd-419e8b0b0f78.jpeg"
+                                    alt="メンバーシップ特典の画像"
+                                />
+                            </a>
+                            <div class="reward-detail-wrapper">
+                                <h4 class="title">1000yen coupon</h4>
+                                <div class="exchange-point-wrapper">
+                                    <svg
+                                        class="exchange-point-icon"
+                                        width="40"
+                                        height="40"
+                                        viewBox="0 0 40 40"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M24.4922 27.7907C24.974 27.8602 25.4557 27.9131 25.9375 27.9492C26.4583 27.9883 26.9792 28.0078 27.5 28.0078C29.6354 28.0078 31.569 27.7409 33.3008 27.207C35.0326 26.6732 36.4323 25.9375 37.5 25V28.5156C37.5 29.1927 37.2396 29.8307 36.7188 30.4297C36.1979 31.0547 35.4818 31.5885 34.5703 32.0312C33.6588 32.474 32.6042 32.8385 31.4062 33.125C30.1823 33.3854 28.8802 33.5156 27.5 33.5156H27.4609C26.9401 33.5156 26.4258 33.4961 25.918 33.457C25.4102 33.418 24.9349 33.3594 24.4922 33.2812V27.7907V27.7907ZM24.4922 27.7907C24.4531 27.785 24.4141 27.7793 24.375 27.7734H24.4922V27.7907V27.7907ZM24.4922 20.2915C24.9469 20.3596 25.3961 20.4057 25.8398 20.4297C26.3216 20.4557 26.8099 20.4688 27.3047 20.4688H27.5C29.6354 20.4688 31.569 20.2018 33.3008 19.668C35.0326 19.1341 36.4323 18.3984 37.5 17.4609V21.0156C37.5 21.6927 37.2396 22.3307 36.7188 22.9297C36.1979 23.5547 35.4818 24.0885 34.5703 24.5312C33.6588 24.974 32.6042 25.3385 31.4062 25.625C30.1823 25.8854 28.8802 26.0156 27.5 26.0156H27.4609C26.9401 26.0156 26.4258 25.9961 25.918 25.957C25.4102 25.918 24.9349 25.8594 24.4922 25.7812V20.2915V20.2915ZM24.4922 20.2915C24.4532 20.2856 24.4141 20.2796 24.375 20.2734H24.4922V20.2915V20.2915ZM17.5 10C18.5677 10.9115 19.9674 11.6406 21.6992 12.1875C23.431 12.7344 25.3646 13.0078 27.5 13.0078C29.6354 13.0078 31.569 12.7409 33.3008 12.207C35.0326 11.6732 36.4323 10.9375 37.5 10V13.5156C37.5 14.1927 37.2396 14.8307 36.7188 15.4297C36.1979 16.0547 35.4818 16.5885 34.5703 17.0312C33.6588 17.474 32.6042 17.8385 31.4062 18.125C30.1823 18.3854 28.8802 18.5156 27.5 18.5156C26.9531 18.5156 26.4193 18.4896 25.8984 18.4375C25.3776 18.3854 24.8958 18.3203 24.4531 18.2422C24.2708 17.2786 23.8021 16.3867 23.0469 15.5664C22.2917 14.7461 21.3021 14.0625 20.0781 13.5156L20.1953 13.5547C19.7786 13.3464 19.349 13.1641 18.9062 13.0078C18.4635 12.8516 17.9948 12.7214 17.5 12.6172V10ZM37.5 6.01562C37.5 6.69271 37.2396 7.33073 36.7188 7.92969C36.1979 8.55469 35.4818 9.08854 34.5703 9.53125C33.6588 9.97396 32.6042 10.3385 31.4062 10.625C30.1823 10.8854 28.8802 11.0156 27.5 11.0156C26.1198 11.0156 24.8177 10.8854 23.5938 10.625C22.3958 10.3385 21.3412 9.97396 20.4297 9.53125C19.5182 9.08854 18.8021 8.55469 18.2812 7.92969C17.7604 7.33073 17.5 6.69271 17.5 6.01562C17.5 5.3125 17.7604 4.66146 18.2812 4.0625C18.8021 3.4375 19.5182 2.90365 20.4297 2.46094C21.3412 2.01823 22.3958 1.66667 23.5938 1.40625C24.8177 1.14583 26.1198 1.01562 27.5 1.01562C28.8802 1.01562 30.1823 1.14583 31.4062 1.40625C32.6042 1.66667 33.6588 2.01823 34.5703 2.46094C35.4818 2.90365 36.1979 3.4375 36.7188 4.0625C37.2396 4.66146 37.5 5.3125 37.5 6.01562ZM2.5 30.4688C3.56771 31.4063 4.96744 32.1419 6.69922 32.6758C8.431 33.2096 10.3646 33.4766 12.5 33.4766C14.6354 33.4766 16.569 33.2096 18.3008 32.6758C20.0326 32.1419 21.4323 31.4063 22.5 30.4688V33.9844C22.5 34.6875 22.2396 35.3385 21.7188 35.9375C21.1979 36.5625 20.4818 37.0964 19.5703 37.5391C18.6588 37.9818 17.6042 38.3333 16.4062 38.5938C15.1823 38.8542 13.8802 38.9844 12.5 38.9844C11.1198 38.9844 9.81771 38.8542 8.59375 38.5938C7.39583 38.3333 6.34115 37.9818 5.42969 37.5391C4.51822 37.0964 3.80209 36.5625 3.28125 35.9375C2.76041 35.3385 2.5 34.6875 2.5 33.9844V30.4688ZM2.5 23.0078C3.56771 23.9193 4.96744 24.6484 6.69922 25.1953C8.431 25.7422 10.3646 26.0156 12.5 26.0156C14.6354 26.0156 16.569 25.7487 18.3008 25.2148C20.0326 24.681 21.4323 23.9453 22.5 23.0078V26.4844C22.5 27.1875 22.2396 27.8385 21.7188 28.4375C21.1979 29.0625 20.4818 29.5964 19.5703 30.0391C18.6588 30.4818 17.6042 30.8333 16.4062 31.0938C15.1823 31.3542 13.8802 31.4844 12.5 31.4844C11.1198 31.4844 9.81771 31.3542 8.59375 31.0938C7.39583 30.8333 6.34115 30.4818 5.42969 30.0391C4.51822 29.5964 3.80209 29.0625 3.28125 28.4375C2.76041 27.8385 2.5 27.1875 2.5 26.4844V23.0078ZM22.5 18.9844C22.5 19.6875 22.2396 20.3385 21.7188 20.9375C21.1979 21.5625 20.4818 22.0964 19.5703 22.5391C18.6588 22.9818 17.6042 23.3333 16.4062 23.5938C15.1823 23.8542 13.8802 23.9844 12.5 23.9844C11.1198 23.9844 9.81771 23.8542 8.59375 23.5938C7.39583 23.3333 6.34115 22.9818 5.42969 22.5391C4.51822 22.0964 3.80209 21.5625 3.28125 20.9375C2.76041 20.3385 2.5 19.6875 2.5 18.9844C2.5 18.3073 2.76041 17.6693 3.28125 17.0703C3.80209 16.4453 4.51822 15.9115 5.42969 15.4688C6.34115 15.026 7.39583 14.6615 8.59375 14.375C9.81771 14.1146 11.1198 13.9844 12.5 13.9844C13.8802 13.9844 15.1823 14.1146 16.4062 14.375C17.6042 14.6615 18.6588 15.026 19.5703 15.4688C20.4818 15.9115 21.1979 16.4453 21.7188 17.0703C22.2396 17.6693 22.5 18.3073 22.5 18.9844Z"
+                                            fill="#252525"
+                                        />
+                                    </svg>
+                                    <span class="exchange-point">1,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reward-card">
+                            <a
+                                href="https://base-public.akamaized.net/membership-app/images/origin/recollevin-base-shop/rewards/08c7abdb-e316-459e-bbf9-9cef9e35ed2f.jpeg"
+                                target="_blank"
+                            >
+                                <img
+                                    class="reward-image"
+                                    src="https://base-public.akamaized.net/membership-app/images/origin/recollevin-base-shop/rewards/08c7abdb-e316-459e-bbf9-9cef9e35ed2f.jpeg"
+                                    alt="メンバーシップ特典の画像"
+                                />
+                            </a>
+                            <div class="reward-detail-wrapper">
+                                <h4 class="title">3000yen coupon</h4>
+                                <div class="exchange-point-wrapper">
+                                    <svg
+                                        class="exchange-point-icon"
+                                        width="40"
+                                        height="40"
+                                        viewBox="0 0 40 40"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M24.4922 27.7907C24.974 27.8602 25.4557 27.9131 25.9375 27.9492C26.4583 27.9883 26.9792 28.0078 27.5 28.0078C29.6354 28.0078 31.569 27.7409 33.3008 27.207C35.0326 26.6732 36.4323 25.9375 37.5 25V28.5156C37.5 29.1927 37.2396 29.8307 36.7188 30.4297C36.1979 31.0547 35.4818 31.5885 34.5703 32.0312C33.6588 32.474 32.6042 32.8385 31.4062 33.125C30.1823 33.3854 28.8802 33.5156 27.5 33.5156H27.4609C26.9401 33.5156 26.4258 33.4961 25.918 33.457C25.4102 33.418 24.9349 33.3594 24.4922 33.2812V27.7907V27.7907ZM24.4922 27.7907C24.4531 27.785 24.4141 27.7793 24.375 27.7734H24.4922V27.7907V27.7907ZM24.4922 20.2915C24.9469 20.3596 25.3961 20.4057 25.8398 20.4297C26.3216 20.4557 26.8099 20.4688 27.3047 20.4688H27.5C29.6354 20.4688 31.569 20.2018 33.3008 19.668C35.0326 19.1341 36.4323 18.3984 37.5 17.4609V21.0156C37.5 21.6927 37.2396 22.3307 36.7188 22.9297C36.1979 23.5547 35.4818 24.0885 34.5703 24.5312C33.6588 24.974 32.6042 25.3385 31.4062 25.625C30.1823 25.8854 28.8802 26.0156 27.5 26.0156H27.4609C26.9401 26.0156 26.4258 25.9961 25.918 25.957C25.4102 25.918 24.9349 25.8594 24.4922 25.7812V20.2915V20.2915ZM24.4922 20.2915C24.4532 20.2856 24.4141 20.2796 24.375 20.2734H24.4922V20.2915V20.2915ZM17.5 10C18.5677 10.9115 19.9674 11.6406 21.6992 12.1875C23.431 12.7344 25.3646 13.0078 27.5 13.0078C29.6354 13.0078 31.569 12.7409 33.3008 12.207C35.0326 11.6732 36.4323 10.9375 37.5 10V13.5156C37.5 14.1927 37.2396 14.8307 36.7188 15.4297C36.1979 16.0547 35.4818 16.5885 34.5703 17.0312C33.6588 17.474 32.6042 17.8385 31.4062 18.125C30.1823 18.3854 28.8802 18.5156 27.5 18.5156C26.9531 18.5156 26.4193 18.4896 25.8984 18.4375C25.3776 18.3854 24.8958 18.3203 24.4531 18.2422C24.2708 17.2786 23.8021 16.3867 23.0469 15.5664C22.2917 14.7461 21.3021 14.0625 20.0781 13.5156L20.1953 13.5547C19.7786 13.3464 19.349 13.1641 18.9062 13.0078C18.4635 12.8516 17.9948 12.7214 17.5 12.6172V10ZM37.5 6.01562C37.5 6.69271 37.2396 7.33073 36.7188 7.92969C36.1979 8.55469 35.4818 9.08854 34.5703 9.53125C33.6588 9.97396 32.6042 10.3385 31.4062 10.625C30.1823 10.8854 28.8802 11.0156 27.5 11.0156C26.1198 11.0156 24.8177 10.8854 23.5938 10.625C22.3958 10.3385 21.3412 9.97396 20.4297 9.53125C19.5182 9.08854 18.8021 8.55469 18.2812 7.92969C17.7604 7.33073 17.5 6.69271 17.5 6.01562C17.5 5.3125 17.7604 4.66146 18.2812 4.0625C18.8021 3.4375 19.5182 2.90365 20.4297 2.46094C21.3412 2.01823 22.3958 1.66667 23.5938 1.40625C24.8177 1.14583 26.1198 1.01562 27.5 1.01562C28.8802 1.01562 30.1823 1.14583 31.4062 1.40625C32.6042 1.66667 33.6588 2.01823 34.5703 2.46094C35.4818 2.90365 36.1979 3.4375 36.7188 4.0625C37.2396 4.66146 37.5 5.3125 37.5 6.01562ZM2.5 30.4688C3.56771 31.4063 4.96744 32.1419 6.69922 32.6758C8.431 33.2096 10.3646 33.4766 12.5 33.4766C14.6354 33.4766 16.569 33.2096 18.3008 32.6758C20.0326 32.1419 21.4323 31.4063 22.5 30.4688V33.9844C22.5 34.6875 22.2396 35.3385 21.7188 35.9375C21.1979 36.5625 20.4818 37.0964 19.5703 37.5391C18.6588 37.9818 17.6042 38.3333 16.4062 38.5938C15.1823 38.8542 13.8802 38.9844 12.5 38.9844C11.1198 38.9844 9.81771 38.8542 8.59375 38.5938C7.39583 38.3333 6.34115 37.9818 5.42969 37.5391C4.51822 37.0964 3.80209 36.5625 3.28125 35.9375C2.76041 35.3385 2.5 34.6875 2.5 33.9844V30.4688ZM2.5 23.0078C3.56771 23.9193 4.96744 24.6484 6.69922 25.1953C8.431 25.7422 10.3646 26.0156 12.5 26.0156C14.6354 26.0156 16.569 25.7487 18.3008 25.2148C20.0326 24.681 21.4323 23.9453 22.5 23.0078V26.4844C22.5 27.1875 22.2396 27.8385 21.7188 28.4375C21.1979 29.0625 20.4818 29.5964 19.5703 30.0391C18.6588 30.4818 17.6042 30.8333 16.4062 31.0938C15.1823 31.3542 13.8802 31.4844 12.5 31.4844C11.1198 31.4844 9.81771 31.3542 8.59375 31.0938C7.39583 30.8333 6.34115 30.4818 5.42969 30.0391C4.51822 29.5964 3.80209 29.0625 3.28125 28.4375C2.76041 27.8385 2.5 27.1875 2.5 26.4844V23.0078ZM22.5 18.9844C22.5 19.6875 22.2396 20.3385 21.7188 20.9375C21.1979 21.5625 20.4818 22.0964 19.5703 22.5391C18.6588 22.9818 17.6042 23.3333 16.4062 23.5938C15.1823 23.8542 13.8802 23.9844 12.5 23.9844C11.1198 23.9844 9.81771 23.8542 8.59375 23.5938C7.39583 23.3333 6.34115 22.9818 5.42969 22.5391C4.51822 22.0964 3.80209 21.5625 3.28125 20.9375C2.76041 20.3385 2.5 19.6875 2.5 18.9844C2.5 18.3073 2.76041 17.6693 3.28125 17.0703C3.80209 16.4453 4.51822 15.9115 5.42969 15.4688C6.34115 15.026 7.39583 14.6615 8.59375 14.375C9.81771 14.1146 11.1198 13.9844 12.5 13.9844C13.8802 13.9844 15.1823 14.1146 16.4062 14.375C17.6042 14.6615 18.6588 15.026 19.5703 15.4688C20.4818 15.9115 21.1979 16.4453 21.7188 17.0703C22.2396 17.6693 22.5 18.3073 22.5 18.9844Z"
+                                            fill="#252525"
+                                        />
+                                    </svg>
+                                    <span class="exchange-point">3,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reward-card">
+                            <a
+                                href="https://base-public.akamaized.net/membership-app/images/origin/recollevin-base-shop/rewards/b5570163-1ffd-4c94-a0e1-be582850d625.jpeg"
+                                target="_blank"
+                            >
+                                <img
+                                    class="reward-image"
+                                    src="https://base-public.akamaized.net/membership-app/images/origin/recollevin-base-shop/rewards/b5570163-1ffd-4c94-a0e1-be582850d625.jpeg"
+                                    alt="メンバーシップ特典の画像"
+                                />
+                            </a>
+                            <div class="reward-detail-wrapper">
+                                <h4 class="title">5000yen coupon</h4>
+                                <div class="exchange-point-wrapper">
+                                    <svg
+                                        class="exchange-point-icon"
+                                        width="40"
+                                        height="40"
+                                        viewBox="0 0 40 40"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M24.4922 27.7907C24.974 27.8602 25.4557 27.9131 25.9375 27.9492C26.4583 27.9883 26.9792 28.0078 27.5 28.0078C29.6354 28.0078 31.569 27.7409 33.3008 27.207C35.0326 26.6732 36.4323 25.9375 37.5 25V28.5156C37.5 29.1927 37.2396 29.8307 36.7188 30.4297C36.1979 31.0547 35.4818 31.5885 34.5703 32.0312C33.6588 32.474 32.6042 32.8385 31.4062 33.125C30.1823 33.3854 28.8802 33.5156 27.5 33.5156H27.4609C26.9401 33.5156 26.4258 33.4961 25.918 33.457C25.4102 33.418 24.9349 33.3594 24.4922 33.2812V27.7907V27.7907ZM24.4922 27.7907C24.4531 27.785 24.4141 27.7793 24.375 27.7734H24.4922V27.7907V27.7907ZM24.4922 20.2915C24.9469 20.3596 25.3961 20.4057 25.8398 20.4297C26.3216 20.4557 26.8099 20.4688 27.3047 20.4688H27.5C29.6354 20.4688 31.569 20.2018 33.3008 19.668C35.0326 19.1341 36.4323 18.3984 37.5 17.4609V21.0156C37.5 21.6927 37.2396 22.3307 36.7188 22.9297C36.1979 23.5547 35.4818 24.0885 34.5703 24.5312C33.6588 24.974 32.6042 25.3385 31.4062 25.625C30.1823 25.8854 28.8802 26.0156 27.5 26.0156H27.4609C26.9401 26.0156 26.4258 25.9961 25.918 25.957C25.4102 25.918 24.9349 25.8594 24.4922 25.7812V20.2915V20.2915ZM24.4922 20.2915C24.4532 20.2856 24.4141 20.2796 24.375 20.2734H24.4922V20.2915V20.2915ZM17.5 10C18.5677 10.9115 19.9674 11.6406 21.6992 12.1875C23.431 12.7344 25.3646 13.0078 27.5 13.0078C29.6354 13.0078 31.569 12.7409 33.3008 12.207C35.0326 11.6732 36.4323 10.9375 37.5 10V13.5156C37.5 14.1927 37.2396 14.8307 36.7188 15.4297C36.1979 16.0547 35.4818 16.5885 34.5703 17.0312C33.6588 17.474 32.6042 17.8385 31.4062 18.125C30.1823 18.3854 28.8802 18.5156 27.5 18.5156C26.9531 18.5156 26.4193 18.4896 25.8984 18.4375C25.3776 18.3854 24.8958 18.3203 24.4531 18.2422C24.2708 17.2786 23.8021 16.3867 23.0469 15.5664C22.2917 14.7461 21.3021 14.0625 20.0781 13.5156L20.1953 13.5547C19.7786 13.3464 19.349 13.1641 18.9062 13.0078C18.4635 12.8516 17.9948 12.7214 17.5 12.6172V10ZM37.5 6.01562C37.5 6.69271 37.2396 7.33073 36.7188 7.92969C36.1979 8.55469 35.4818 9.08854 34.5703 9.53125C33.6588 9.97396 32.6042 10.3385 31.4062 10.625C30.1823 10.8854 28.8802 11.0156 27.5 11.0156C26.1198 11.0156 24.8177 10.8854 23.5938 10.625C22.3958 10.3385 21.3412 9.97396 20.4297 9.53125C19.5182 9.08854 18.8021 8.55469 18.2812 7.92969C17.7604 7.33073 17.5 6.69271 17.5 6.01562C17.5 5.3125 17.7604 4.66146 18.2812 4.0625C18.8021 3.4375 19.5182 2.90365 20.4297 2.46094C21.3412 2.01823 22.3958 1.66667 23.5938 1.40625C24.8177 1.14583 26.1198 1.01562 27.5 1.01562C28.8802 1.01562 30.1823 1.14583 31.4062 1.40625C32.6042 1.66667 33.6588 2.01823 34.5703 2.46094C35.4818 2.90365 36.1979 3.4375 36.7188 4.0625C37.2396 4.66146 37.5 5.3125 37.5 6.01562ZM2.5 30.4688C3.56771 31.4063 4.96744 32.1419 6.69922 32.6758C8.431 33.2096 10.3646 33.4766 12.5 33.4766C14.6354 33.4766 16.569 33.2096 18.3008 32.6758C20.0326 32.1419 21.4323 31.4063 22.5 30.4688V33.9844C22.5 34.6875 22.2396 35.3385 21.7188 35.9375C21.1979 36.5625 20.4818 37.0964 19.5703 37.5391C18.6588 37.9818 17.6042 38.3333 16.4062 38.5938C15.1823 38.8542 13.8802 38.9844 12.5 38.9844C11.1198 38.9844 9.81771 38.8542 8.59375 38.5938C7.39583 38.3333 6.34115 37.9818 5.42969 37.5391C4.51822 37.0964 3.80209 36.5625 3.28125 35.9375C2.76041 35.3385 2.5 34.6875 2.5 33.9844V30.4688ZM2.5 23.0078C3.56771 23.9193 4.96744 24.6484 6.69922 25.1953C8.431 25.7422 10.3646 26.0156 12.5 26.0156C14.6354 26.0156 16.569 25.7487 18.3008 25.2148C20.0326 24.681 21.4323 23.9453 22.5 23.0078V26.4844C22.5 27.1875 22.2396 27.8385 21.7188 28.4375C21.1979 29.0625 20.4818 29.5964 19.5703 30.0391C18.6588 30.4818 17.6042 30.8333 16.4062 31.0938C15.1823 31.3542 13.8802 31.4844 12.5 31.4844C11.1198 31.4844 9.81771 31.3542 8.59375 31.0938C7.39583 30.8333 6.34115 30.4818 5.42969 30.0391C4.51822 29.5964 3.80209 29.0625 3.28125 28.4375C2.76041 27.8385 2.5 27.1875 2.5 26.4844V23.0078ZM22.5 18.9844C22.5 19.6875 22.2396 20.3385 21.7188 20.9375C21.1979 21.5625 20.4818 22.0964 19.5703 22.5391C18.6588 22.9818 17.6042 23.3333 16.4062 23.5938C15.1823 23.8542 13.8802 23.9844 12.5 23.9844C11.1198 23.9844 9.81771 23.8542 8.59375 23.5938C7.39583 23.3333 6.34115 22.9818 5.42969 22.5391C4.51822 22.0964 3.80209 21.5625 3.28125 20.9375C2.76041 20.3385 2.5 19.6875 2.5 18.9844C2.5 18.3073 2.76041 17.6693 3.28125 17.0703C3.80209 16.4453 4.51822 15.9115 5.42969 15.4688C6.34115 15.026 7.39583 14.6615 8.59375 14.375C9.81771 14.1146 11.1198 13.9844 12.5 13.9844C13.8802 13.9844 15.1823 14.1146 16.4062 14.375C17.6042 14.6615 18.6588 15.026 19.5703 15.4688C20.4818 15.9115 21.1979 16.4453 21.7188 17.0703C22.2396 17.6693 22.5 18.3073 22.5 18.9844Z"
+                                            fill="#252525"
+                                        />
+                                    </svg>
+                                    <span class="exchange-point">5,000</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="reward-card">
+                            <a
+                                href="https://base-public.akamaized.net/membership-app/images/origin/recollevin-base-shop/rewards/43daffe2-da09-4be7-94e9-0acc621ec999.jpeg"
+                                target="_blank"
+                            >
+                                <img
+                                    class="reward-image"
+                                    src="https://base-public.akamaized.net/membership-app/images/origin/recollevin-base-shop/rewards/43daffe2-da09-4be7-94e9-0acc621ec999.jpeg"
+                                    alt="メンバーシップ特典の画像"
+                                />
+                            </a>
+                            <div class="reward-detail-wrapper">
+                                <h4 class="title">10000yen coupon</h4>
+                                <div class="exchange-point-wrapper">
+                                    <svg
+                                        class="exchange-point-icon"
+                                        width="40"
+                                        height="40"
+                                        viewBox="0 0 40 40"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            fill-rule="evenodd"
+                                            clip-rule="evenodd"
+                                            d="M24.4922 27.7907C24.974 27.8602 25.4557 27.9131 25.9375 27.9492C26.4583 27.9883 26.9792 28.0078 27.5 28.0078C29.6354 28.0078 31.569 27.7409 33.3008 27.207C35.0326 26.6732 36.4323 25.9375 37.5 25V28.5156C37.5 29.1927 37.2396 29.8307 36.7188 30.4297C36.1979 31.0547 35.4818 31.5885 34.5703 32.0312C33.6588 32.474 32.6042 32.8385 31.4062 33.125C30.1823 33.3854 28.8802 33.5156 27.5 33.5156H27.4609C26.9401 33.5156 26.4258 33.4961 25.918 33.457C25.4102 33.418 24.9349 33.3594 24.4922 33.2812V27.7907V27.7907ZM24.4922 27.7907C24.4531 27.785 24.4141 27.7793 24.375 27.7734H24.4922V27.7907V27.7907ZM24.4922 20.2915C24.9469 20.3596 25.3961 20.4057 25.8398 20.4297C26.3216 20.4557 26.8099 20.4688 27.3047 20.4688H27.5C29.6354 20.4688 31.569 20.2018 33.3008 19.668C35.0326 19.1341 36.4323 18.3984 37.5 17.4609V21.0156C37.5 21.6927 37.2396 22.3307 36.7188 22.9297C36.1979 23.5547 35.4818 24.0885 34.5703 24.5312C33.6588 24.974 32.6042 25.3385 31.4062 25.625C30.1823 25.8854 28.8802 26.0156 27.5 26.0156H27.4609C26.9401 26.0156 26.4258 25.9961 25.918 25.957C25.4102 25.918 24.9349 25.8594 24.4922 25.7812V20.2915V20.2915ZM24.4922 20.2915C24.4532 20.2856 24.4141 20.2796 24.375 20.2734H24.4922V20.2915V20.2915ZM17.5 10C18.5677 10.9115 19.9674 11.6406 21.6992 12.1875C23.431 12.7344 25.3646 13.0078 27.5 13.0078C29.6354 13.0078 31.569 12.7409 33.3008 12.207C35.0326 11.6732 36.4323 10.9375 37.5 10V13.5156C37.5 14.1927 37.2396 14.8307 36.7188 15.4297C36.1979 16.0547 35.4818 16.5885 34.5703 17.0312C33.6588 17.474 32.6042 17.8385 31.4062 18.125C30.1823 18.3854 28.8802 18.5156 27.5 18.5156C26.9531 18.5156 26.4193 18.4896 25.8984 18.4375C25.3776 18.3854 24.8958 18.3203 24.4531 18.2422C24.2708 17.2786 23.8021 16.3867 23.0469 15.5664C22.2917 14.7461 21.3021 14.0625 20.0781 13.5156L20.1953 13.5547C19.7786 13.3464 19.349 13.1641 18.9062 13.0078C18.4635 12.8516 17.9948 12.7214 17.5 12.6172V10ZM37.5 6.01562C37.5 6.69271 37.2396 7.33073 36.7188 7.92969C36.1979 8.55469 35.4818 9.08854 34.5703 9.53125C33.6588 9.97396 32.6042 10.3385 31.4062 10.625C30.1823 10.8854 28.8802 11.0156 27.5 11.0156C26.1198 11.0156 24.8177 10.8854 23.5938 10.625C22.3958 10.3385 21.3412 9.97396 20.4297 9.53125C19.5182 9.08854 18.8021 8.55469 18.2812 7.92969C17.7604 7.33073 17.5 6.69271 17.5 6.01562C17.5 5.3125 17.7604 4.66146 18.2812 4.0625C18.8021 3.4375 19.5182 2.90365 20.4297 2.46094C21.3412 2.01823 22.3958 1.66667 23.5938 1.40625C24.8177 1.14583 26.1198 1.01562 27.5 1.01562C28.8802 1.01562 30.1823 1.14583 31.4062 1.40625C32.6042 1.66667 33.6588 2.01823 34.5703 2.46094C35.4818 2.90365 36.1979 3.4375 36.7188 4.0625C37.2396 4.66146 37.5 5.3125 37.5 6.01562ZM2.5 30.4688C3.56771 31.4063 4.96744 32.1419 6.69922 32.6758C8.431 33.2096 10.3646 33.4766 12.5 33.4766C14.6354 33.4766 16.569 33.2096 18.3008 32.6758C20.0326 32.1419 21.4323 31.4063 22.5 30.4688V33.9844C22.5 34.6875 22.2396 35.3385 21.7188 35.9375C21.1979 36.5625 20.4818 37.0964 19.5703 37.5391C18.6588 37.9818 17.6042 38.3333 16.4062 38.5938C15.1823 38.8542 13.8802 38.9844 12.5 38.9844C11.1198 38.9844 9.81771 38.8542 8.59375 38.5938C7.39583 38.3333 6.34115 37.9818 5.42969 37.5391C4.51822 37.0964 3.80209 36.5625 3.28125 35.9375C2.76041 35.3385 2.5 34.6875 2.5 33.9844V30.4688ZM2.5 23.0078C3.56771 23.9193 4.96744 24.6484 6.69922 25.1953C8.431 25.7422 10.3646 26.0156 12.5 26.0156C14.6354 26.0156 16.569 25.7487 18.3008 25.2148C20.0326 24.681 21.4323 23.9453 22.5 23.0078V26.4844C22.5 27.1875 22.2396 27.8385 21.7188 28.4375C21.1979 29.0625 20.4818 29.5964 19.5703 30.0391C18.6588 30.4818 17.6042 30.8333 16.4062 31.0938C15.1823 31.3542 13.8802 31.4844 12.5 31.4844C11.1198 31.4844 9.81771 31.3542 8.59375 31.0938C7.39583 30.8333 6.34115 30.4818 5.42969 30.0391C4.51822 29.5964 3.80209 29.0625 3.28125 28.4375C2.76041 27.8385 2.5 27.1875 2.5 26.4844V23.0078ZM22.5 18.9844C22.5 19.6875 22.2396 20.3385 21.7188 20.9375C21.1979 21.5625 20.4818 22.0964 19.5703 22.5391C18.6588 22.9818 17.6042 23.3333 16.4062 23.5938C15.1823 23.8542 13.8802 23.9844 12.5 23.9844C11.1198 23.9844 9.81771 23.8542 8.59375 23.5938C7.39583 23.3333 6.34115 22.9818 5.42969 22.5391C4.51822 22.0964 3.80209 21.5625 3.28125 20.9375C2.76041 20.3385 2.5 19.6875 2.5 18.9844C2.5 18.3073 2.76041 17.6693 3.28125 17.0703C3.80209 16.4453 4.51822 15.9115 5.42969 15.4688C6.34115 15.026 7.39583 14.6615 8.59375 14.375C9.81771 14.1146 11.1198 13.9844 12.5 13.9844C13.8802 13.9844 15.1823 14.1146 16.4062 14.375C17.6042 14.6615 18.6588 15.026 19.5703 15.4688C20.4818 15.9115 21.1979 16.4453 21.7188 17.0703C22.2396 17.6693 22.5 18.3073 22.5 18.9844Z"
+                                            fill="#252525"
+                                        />
+                                    </svg>
+                                    <span class="exchange-point">10,000</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <section class="register">
+                    <h3 class="heading">会員登録する</h3>
+                    <div class="description-wrapper">
+                        <p class="description">
+                            会員に登録するにはPay IDアカウントが必要です。
+                        </p>
+                        <p class="description">
+                            会員登録にあたり
+                            <a
+                                class="description-link"
+                                href="https://thebase.com/pages/shop_membership_term"
+                                >利用規約</a
+                            >
+                            に同意したとみなします。
+                        </p>
+                    </div>
+
+                    <form
+                        class="mail-magazine"
+                        action="https://recollevin.base.shop/membership/register/recollevin-base-shop"
+                        method="POST"
+                    >
+                        <div class="mail-magazine-wrapper">
+                            <input
+                                class="checkbox"
+                                id="subscribe-mail-magazine"
+                                type="checkbox"
+                                name="subscribe-mail-magazine"
+                                value="on"
+                                checked
+                            />
+                            <label class="label" for="subscribe-mail-magazine"
+                                >メールマガジンを受け取る</label
+                            >
+                        </div>
+
+                        <div class="link-wrapper">
+                            <button class="link" type="submit">
+                                会員登録する
+                            </button>
+                        </div>
+                    </form>
+                    <p class="login">
+                        すでに会員の方は<a
+                            class="login-link"
+                            href="/membership/login"
+                            >こちら</a
+                        >
+                    </p>
+                </section>
+            </div>
+            <link
+                rel="stylesheet"
+                href="https://cf-baseassets.thebase.in/6d76fc4a167f9985580ebe0550c78a37/asset/shop/membership/guide-521714fc0ba8b6877f1e.css"
+            />
         </div>
+    </body>
 
-        <!-- {block:AppsItemCategory} -->
-        <!-- {AppsItemCategoryCategoriesTag} -->
-        <ul id="appsItemCategoryTag">
-          <li class="appsItemCategoryTag_child">
-            <a href="{大カテゴリページへのリンク}" class="mainHeaderNavColor"
-              >Brands</a
-            >
-            <ul class="appsItemCategoryTag_lowerchild">
-              <li>
-                <a
-                  href="{中カテゴリページへのリンク}"
-                  class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
-                  >ARNYS PARIS</a
-                >
-              </li>
-              <li>
-                <a
-                  href="{中カテゴリページへのリンク}"
-                  class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
-                  >BONEVILLE</a
-                >
-              </li>
-              <li>
-                <a
-                  href="{中カテゴリページへのリンク}"
-                  class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
-                  >CELINE</a
-                >
-              </li>
-              <li>
-                <a
-                  href="{中カテゴリページへのリンク}"
-                  class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
-                  >- - - - - - -
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{中カテゴリページへのリンク}"
-                  class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
-                  >- - - - - - -
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{中カテゴリページへのリンク}"
-                  class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
-                  >- - - - - - -
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{中カテゴリページへのリンク}"
-                  class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
-                  >- - - - - - -
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{中カテゴリページへのリンク}"
-                  class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
-                  >- - - - - - -
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{中カテゴリページへのリンク}"
-                  class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
-                  >- - - - - - -
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{中カテゴリページへのリンク}"
-                  class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
-                  >- - - - - - -
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{中カテゴリページへのリンク}"
-                  class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
-                  >- - - - - - -
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{中カテゴリページへのリンク}"
-                  class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
-                  >- - - - - - -
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{中カテゴリページへのリンク}"
-                  class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
-                  >- - - - - - -
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{中カテゴリページへのリンク}"
-                  class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
-                  >- - - - - - -
-                </a>
-              </li>
-            </ul>
-          </li>
-          <li class="appsItemCategoryTag_child">
-            <a href="{大カテゴリページへのリンク}" class="mainHeaderNavColor"
-              >Items</a
-            >
-            <ul class="appsItemCategoryTag_lowerchild">
-              <li>
-                <a
-                  href="{中カテゴリページへのリンク}"
-                  class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
-                  >- - - - - - -
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{中カテゴリページへのリンク}"
-                  class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
-                  >- - - - - - -
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{中カテゴリページへのリンク}"
-                  class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
-                  >- - - - - - -
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{中カテゴリページへのリンク}"
-                  class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
-                  >- - - - - - -
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{中カテゴリページへのリンク}"
-                  class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
-                  >- - - - - - -
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{中カテゴリページへのリンク}"
-                  class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
-                  >- - - - - - -
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{中カテゴリページへのリンク}"
-                  class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
-                  >- - - - - - -
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{中カテゴリページへのリンク}"
-                  class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
-                  >- - - - - - -
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{中カテゴリページへのリンク}"
-                  class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
-                  >- - - - - - -
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{中カテゴリページへのリンク}"
-                  class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
-                  >- - - - - - -
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{中カテゴリページへのリンク}"
-                  class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
-                  >- - - - - - -
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{中カテゴリページへのリンク}"
-                  class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
-                  >- - - - - - -
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{中カテゴリページへのリンク}"
-                  class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
-                  >- - - - - - -
-                </a>
-              </li>
-              <li>
-                <a
-                  href="{中カテゴリページへのリンク}"
-                  class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
-                  >- - - - - - -
-                </a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-        <!-- {/block:AppsItemCategory} -->
-      </nav>
-      <div id="mask"></div>
-    </header>
-
-    <div id="page" class="membership">
-      <div class="guide">
-        <div class="img-wrapper">
-          <img
-            class="img"
-            src="https://membership-app.akamaized.net/images/origin/recollevin-base-shop/main/803b3940-a015-4f6c-be79-7d8e8ee175f5.png"
-            alt="メンバーシップのトップ画像"
-          />
-        </div>
-        <section class="content">
-          <h2 class="heading">RC MILE CLUB</h2>
-          <div class="description">
-            <p>
-              メンバーシップ特典としてはお買い上げ毎（3%還元）にポイントを貯めて特典と交換となります。<br />
-              <br />
-              <br />
-              例）34000円お買い上げ頂くと<br />
-              34000×0.03=1020 ⇒1020ポイント<br />
-              <br />
-              特典・・ポイントと同じ金額のクーポンに交換<br />
-              例)1000ポイント→1000円分のクーポンに交換<br />
-              <br />
-              メンバーポイント<br />
-              メンバーポイントとは、このショップ独自のポイントになります。<br />
-              ポイントはメンバーシップに入会しているお客様だけに付与され、特典交換時にご利用いただけます。<br />
-              購入金額のうち、3％が付与されます。
-            </p>
-          </div>
-        </section>
-
-        <section class="about-point">
-          <h2 class="heading-point">RC MILE CLUB</h2>
-          <ul class="description">
-            <li class="description-details">
-              RC MILE CLUBとは、このショップ独自のポイントになります。
-            </li>
-            <li class="description-details">
-              ポイントはメンバーシップに入会しているお客様だけに付与され、特典交換時にご利用いただけます。
-            </li>
-            <li class="description-details">
-              購入金額のうち、3％が付与されます。
-            </li>
-          </ul>
-        </section>
-
-        <div class="reward-list">
-          <h3 class="title">特典一覧</h3>
-          <hr class="bar" />
-          <p class="description">
-            RC MILE CLUBが貯まったら、商品購入時に特典申請することができます。
-          </p>
-          <div class="reward-card-list">
-            <div class="reward-card">
-              <a
-                href="https://base-public.akamaized.net/membership-app/images/origin/recollevin-base-shop/rewards/1c28e445-bf1c-4f13-91dd-419e8b0b0f78.jpeg"
-                target="_blank"
-              >
-                <img
-                  class="reward-image"
-                  src="https://base-public.akamaized.net/membership-app/images/origin/recollevin-base-shop/rewards/1c28e445-bf1c-4f13-91dd-419e8b0b0f78.jpeg"
-                  alt="メンバーシップ特典の画像"
-                />
-              </a>
-              <div class="reward-detail-wrapper">
-                <h4 class="title">1000yen coupon</h4>
-                <div class="exchange-point-wrapper">
-                  <svg
-                    class="exchange-point-icon"
-                    width="40"
-                    height="40"
-                    viewBox="0 0 40 40"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M24.4922 27.7907C24.974 27.8602 25.4557 27.9131 25.9375 27.9492C26.4583 27.9883 26.9792 28.0078 27.5 28.0078C29.6354 28.0078 31.569 27.7409 33.3008 27.207C35.0326 26.6732 36.4323 25.9375 37.5 25V28.5156C37.5 29.1927 37.2396 29.8307 36.7188 30.4297C36.1979 31.0547 35.4818 31.5885 34.5703 32.0312C33.6588 32.474 32.6042 32.8385 31.4062 33.125C30.1823 33.3854 28.8802 33.5156 27.5 33.5156H27.4609C26.9401 33.5156 26.4258 33.4961 25.918 33.457C25.4102 33.418 24.9349 33.3594 24.4922 33.2812V27.7907V27.7907ZM24.4922 27.7907C24.4531 27.785 24.4141 27.7793 24.375 27.7734H24.4922V27.7907V27.7907ZM24.4922 20.2915C24.9469 20.3596 25.3961 20.4057 25.8398 20.4297C26.3216 20.4557 26.8099 20.4688 27.3047 20.4688H27.5C29.6354 20.4688 31.569 20.2018 33.3008 19.668C35.0326 19.1341 36.4323 18.3984 37.5 17.4609V21.0156C37.5 21.6927 37.2396 22.3307 36.7188 22.9297C36.1979 23.5547 35.4818 24.0885 34.5703 24.5312C33.6588 24.974 32.6042 25.3385 31.4062 25.625C30.1823 25.8854 28.8802 26.0156 27.5 26.0156H27.4609C26.9401 26.0156 26.4258 25.9961 25.918 25.957C25.4102 25.918 24.9349 25.8594 24.4922 25.7812V20.2915V20.2915ZM24.4922 20.2915C24.4532 20.2856 24.4141 20.2796 24.375 20.2734H24.4922V20.2915V20.2915ZM17.5 10C18.5677 10.9115 19.9674 11.6406 21.6992 12.1875C23.431 12.7344 25.3646 13.0078 27.5 13.0078C29.6354 13.0078 31.569 12.7409 33.3008 12.207C35.0326 11.6732 36.4323 10.9375 37.5 10V13.5156C37.5 14.1927 37.2396 14.8307 36.7188 15.4297C36.1979 16.0547 35.4818 16.5885 34.5703 17.0312C33.6588 17.474 32.6042 17.8385 31.4062 18.125C30.1823 18.3854 28.8802 18.5156 27.5 18.5156C26.9531 18.5156 26.4193 18.4896 25.8984 18.4375C25.3776 18.3854 24.8958 18.3203 24.4531 18.2422C24.2708 17.2786 23.8021 16.3867 23.0469 15.5664C22.2917 14.7461 21.3021 14.0625 20.0781 13.5156L20.1953 13.5547C19.7786 13.3464 19.349 13.1641 18.9062 13.0078C18.4635 12.8516 17.9948 12.7214 17.5 12.6172V10ZM37.5 6.01562C37.5 6.69271 37.2396 7.33073 36.7188 7.92969C36.1979 8.55469 35.4818 9.08854 34.5703 9.53125C33.6588 9.97396 32.6042 10.3385 31.4062 10.625C30.1823 10.8854 28.8802 11.0156 27.5 11.0156C26.1198 11.0156 24.8177 10.8854 23.5938 10.625C22.3958 10.3385 21.3412 9.97396 20.4297 9.53125C19.5182 9.08854 18.8021 8.55469 18.2812 7.92969C17.7604 7.33073 17.5 6.69271 17.5 6.01562C17.5 5.3125 17.7604 4.66146 18.2812 4.0625C18.8021 3.4375 19.5182 2.90365 20.4297 2.46094C21.3412 2.01823 22.3958 1.66667 23.5938 1.40625C24.8177 1.14583 26.1198 1.01562 27.5 1.01562C28.8802 1.01562 30.1823 1.14583 31.4062 1.40625C32.6042 1.66667 33.6588 2.01823 34.5703 2.46094C35.4818 2.90365 36.1979 3.4375 36.7188 4.0625C37.2396 4.66146 37.5 5.3125 37.5 6.01562ZM2.5 30.4688C3.56771 31.4063 4.96744 32.1419 6.69922 32.6758C8.431 33.2096 10.3646 33.4766 12.5 33.4766C14.6354 33.4766 16.569 33.2096 18.3008 32.6758C20.0326 32.1419 21.4323 31.4063 22.5 30.4688V33.9844C22.5 34.6875 22.2396 35.3385 21.7188 35.9375C21.1979 36.5625 20.4818 37.0964 19.5703 37.5391C18.6588 37.9818 17.6042 38.3333 16.4062 38.5938C15.1823 38.8542 13.8802 38.9844 12.5 38.9844C11.1198 38.9844 9.81771 38.8542 8.59375 38.5938C7.39583 38.3333 6.34115 37.9818 5.42969 37.5391C4.51822 37.0964 3.80209 36.5625 3.28125 35.9375C2.76041 35.3385 2.5 34.6875 2.5 33.9844V30.4688ZM2.5 23.0078C3.56771 23.9193 4.96744 24.6484 6.69922 25.1953C8.431 25.7422 10.3646 26.0156 12.5 26.0156C14.6354 26.0156 16.569 25.7487 18.3008 25.2148C20.0326 24.681 21.4323 23.9453 22.5 23.0078V26.4844C22.5 27.1875 22.2396 27.8385 21.7188 28.4375C21.1979 29.0625 20.4818 29.5964 19.5703 30.0391C18.6588 30.4818 17.6042 30.8333 16.4062 31.0938C15.1823 31.3542 13.8802 31.4844 12.5 31.4844C11.1198 31.4844 9.81771 31.3542 8.59375 31.0938C7.39583 30.8333 6.34115 30.4818 5.42969 30.0391C4.51822 29.5964 3.80209 29.0625 3.28125 28.4375C2.76041 27.8385 2.5 27.1875 2.5 26.4844V23.0078ZM22.5 18.9844C22.5 19.6875 22.2396 20.3385 21.7188 20.9375C21.1979 21.5625 20.4818 22.0964 19.5703 22.5391C18.6588 22.9818 17.6042 23.3333 16.4062 23.5938C15.1823 23.8542 13.8802 23.9844 12.5 23.9844C11.1198 23.9844 9.81771 23.8542 8.59375 23.5938C7.39583 23.3333 6.34115 22.9818 5.42969 22.5391C4.51822 22.0964 3.80209 21.5625 3.28125 20.9375C2.76041 20.3385 2.5 19.6875 2.5 18.9844C2.5 18.3073 2.76041 17.6693 3.28125 17.0703C3.80209 16.4453 4.51822 15.9115 5.42969 15.4688C6.34115 15.026 7.39583 14.6615 8.59375 14.375C9.81771 14.1146 11.1198 13.9844 12.5 13.9844C13.8802 13.9844 15.1823 14.1146 16.4062 14.375C17.6042 14.6615 18.6588 15.026 19.5703 15.4688C20.4818 15.9115 21.1979 16.4453 21.7188 17.0703C22.2396 17.6693 22.5 18.3073 22.5 18.9844Z"
-                      fill="#252525"
-                    />
-                  </svg>
-                  <span class="exchange-point">1,000</span>
-                </div>
-              </div>
-            </div>
-            <div class="reward-card">
-              <a
-                href="https://base-public.akamaized.net/membership-app/images/origin/recollevin-base-shop/rewards/08c7abdb-e316-459e-bbf9-9cef9e35ed2f.jpeg"
-                target="_blank"
-              >
-                <img
-                  class="reward-image"
-                  src="https://base-public.akamaized.net/membership-app/images/origin/recollevin-base-shop/rewards/08c7abdb-e316-459e-bbf9-9cef9e35ed2f.jpeg"
-                  alt="メンバーシップ特典の画像"
-                />
-              </a>
-              <div class="reward-detail-wrapper">
-                <h4 class="title">3000yen coupon</h4>
-                <div class="exchange-point-wrapper">
-                  <svg
-                    class="exchange-point-icon"
-                    width="40"
-                    height="40"
-                    viewBox="0 0 40 40"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M24.4922 27.7907C24.974 27.8602 25.4557 27.9131 25.9375 27.9492C26.4583 27.9883 26.9792 28.0078 27.5 28.0078C29.6354 28.0078 31.569 27.7409 33.3008 27.207C35.0326 26.6732 36.4323 25.9375 37.5 25V28.5156C37.5 29.1927 37.2396 29.8307 36.7188 30.4297C36.1979 31.0547 35.4818 31.5885 34.5703 32.0312C33.6588 32.474 32.6042 32.8385 31.4062 33.125C30.1823 33.3854 28.8802 33.5156 27.5 33.5156H27.4609C26.9401 33.5156 26.4258 33.4961 25.918 33.457C25.4102 33.418 24.9349 33.3594 24.4922 33.2812V27.7907V27.7907ZM24.4922 27.7907C24.4531 27.785 24.4141 27.7793 24.375 27.7734H24.4922V27.7907V27.7907ZM24.4922 20.2915C24.9469 20.3596 25.3961 20.4057 25.8398 20.4297C26.3216 20.4557 26.8099 20.4688 27.3047 20.4688H27.5C29.6354 20.4688 31.569 20.2018 33.3008 19.668C35.0326 19.1341 36.4323 18.3984 37.5 17.4609V21.0156C37.5 21.6927 37.2396 22.3307 36.7188 22.9297C36.1979 23.5547 35.4818 24.0885 34.5703 24.5312C33.6588 24.974 32.6042 25.3385 31.4062 25.625C30.1823 25.8854 28.8802 26.0156 27.5 26.0156H27.4609C26.9401 26.0156 26.4258 25.9961 25.918 25.957C25.4102 25.918 24.9349 25.8594 24.4922 25.7812V20.2915V20.2915ZM24.4922 20.2915C24.4532 20.2856 24.4141 20.2796 24.375 20.2734H24.4922V20.2915V20.2915ZM17.5 10C18.5677 10.9115 19.9674 11.6406 21.6992 12.1875C23.431 12.7344 25.3646 13.0078 27.5 13.0078C29.6354 13.0078 31.569 12.7409 33.3008 12.207C35.0326 11.6732 36.4323 10.9375 37.5 10V13.5156C37.5 14.1927 37.2396 14.8307 36.7188 15.4297C36.1979 16.0547 35.4818 16.5885 34.5703 17.0312C33.6588 17.474 32.6042 17.8385 31.4062 18.125C30.1823 18.3854 28.8802 18.5156 27.5 18.5156C26.9531 18.5156 26.4193 18.4896 25.8984 18.4375C25.3776 18.3854 24.8958 18.3203 24.4531 18.2422C24.2708 17.2786 23.8021 16.3867 23.0469 15.5664C22.2917 14.7461 21.3021 14.0625 20.0781 13.5156L20.1953 13.5547C19.7786 13.3464 19.349 13.1641 18.9062 13.0078C18.4635 12.8516 17.9948 12.7214 17.5 12.6172V10ZM37.5 6.01562C37.5 6.69271 37.2396 7.33073 36.7188 7.92969C36.1979 8.55469 35.4818 9.08854 34.5703 9.53125C33.6588 9.97396 32.6042 10.3385 31.4062 10.625C30.1823 10.8854 28.8802 11.0156 27.5 11.0156C26.1198 11.0156 24.8177 10.8854 23.5938 10.625C22.3958 10.3385 21.3412 9.97396 20.4297 9.53125C19.5182 9.08854 18.8021 8.55469 18.2812 7.92969C17.7604 7.33073 17.5 6.69271 17.5 6.01562C17.5 5.3125 17.7604 4.66146 18.2812 4.0625C18.8021 3.4375 19.5182 2.90365 20.4297 2.46094C21.3412 2.01823 22.3958 1.66667 23.5938 1.40625C24.8177 1.14583 26.1198 1.01562 27.5 1.01562C28.8802 1.01562 30.1823 1.14583 31.4062 1.40625C32.6042 1.66667 33.6588 2.01823 34.5703 2.46094C35.4818 2.90365 36.1979 3.4375 36.7188 4.0625C37.2396 4.66146 37.5 5.3125 37.5 6.01562ZM2.5 30.4688C3.56771 31.4063 4.96744 32.1419 6.69922 32.6758C8.431 33.2096 10.3646 33.4766 12.5 33.4766C14.6354 33.4766 16.569 33.2096 18.3008 32.6758C20.0326 32.1419 21.4323 31.4063 22.5 30.4688V33.9844C22.5 34.6875 22.2396 35.3385 21.7188 35.9375C21.1979 36.5625 20.4818 37.0964 19.5703 37.5391C18.6588 37.9818 17.6042 38.3333 16.4062 38.5938C15.1823 38.8542 13.8802 38.9844 12.5 38.9844C11.1198 38.9844 9.81771 38.8542 8.59375 38.5938C7.39583 38.3333 6.34115 37.9818 5.42969 37.5391C4.51822 37.0964 3.80209 36.5625 3.28125 35.9375C2.76041 35.3385 2.5 34.6875 2.5 33.9844V30.4688ZM2.5 23.0078C3.56771 23.9193 4.96744 24.6484 6.69922 25.1953C8.431 25.7422 10.3646 26.0156 12.5 26.0156C14.6354 26.0156 16.569 25.7487 18.3008 25.2148C20.0326 24.681 21.4323 23.9453 22.5 23.0078V26.4844C22.5 27.1875 22.2396 27.8385 21.7188 28.4375C21.1979 29.0625 20.4818 29.5964 19.5703 30.0391C18.6588 30.4818 17.6042 30.8333 16.4062 31.0938C15.1823 31.3542 13.8802 31.4844 12.5 31.4844C11.1198 31.4844 9.81771 31.3542 8.59375 31.0938C7.39583 30.8333 6.34115 30.4818 5.42969 30.0391C4.51822 29.5964 3.80209 29.0625 3.28125 28.4375C2.76041 27.8385 2.5 27.1875 2.5 26.4844V23.0078ZM22.5 18.9844C22.5 19.6875 22.2396 20.3385 21.7188 20.9375C21.1979 21.5625 20.4818 22.0964 19.5703 22.5391C18.6588 22.9818 17.6042 23.3333 16.4062 23.5938C15.1823 23.8542 13.8802 23.9844 12.5 23.9844C11.1198 23.9844 9.81771 23.8542 8.59375 23.5938C7.39583 23.3333 6.34115 22.9818 5.42969 22.5391C4.51822 22.0964 3.80209 21.5625 3.28125 20.9375C2.76041 20.3385 2.5 19.6875 2.5 18.9844C2.5 18.3073 2.76041 17.6693 3.28125 17.0703C3.80209 16.4453 4.51822 15.9115 5.42969 15.4688C6.34115 15.026 7.39583 14.6615 8.59375 14.375C9.81771 14.1146 11.1198 13.9844 12.5 13.9844C13.8802 13.9844 15.1823 14.1146 16.4062 14.375C17.6042 14.6615 18.6588 15.026 19.5703 15.4688C20.4818 15.9115 21.1979 16.4453 21.7188 17.0703C22.2396 17.6693 22.5 18.3073 22.5 18.9844Z"
-                      fill="#252525"
-                    />
-                  </svg>
-                  <span class="exchange-point">3,000</span>
-                </div>
-              </div>
-            </div>
-            <div class="reward-card">
-              <a
-                href="https://base-public.akamaized.net/membership-app/images/origin/recollevin-base-shop/rewards/b5570163-1ffd-4c94-a0e1-be582850d625.jpeg"
-                target="_blank"
-              >
-                <img
-                  class="reward-image"
-                  src="https://base-public.akamaized.net/membership-app/images/origin/recollevin-base-shop/rewards/b5570163-1ffd-4c94-a0e1-be582850d625.jpeg"
-                  alt="メンバーシップ特典の画像"
-                />
-              </a>
-              <div class="reward-detail-wrapper">
-                <h4 class="title">5000yen coupon</h4>
-                <div class="exchange-point-wrapper">
-                  <svg
-                    class="exchange-point-icon"
-                    width="40"
-                    height="40"
-                    viewBox="0 0 40 40"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M24.4922 27.7907C24.974 27.8602 25.4557 27.9131 25.9375 27.9492C26.4583 27.9883 26.9792 28.0078 27.5 28.0078C29.6354 28.0078 31.569 27.7409 33.3008 27.207C35.0326 26.6732 36.4323 25.9375 37.5 25V28.5156C37.5 29.1927 37.2396 29.8307 36.7188 30.4297C36.1979 31.0547 35.4818 31.5885 34.5703 32.0312C33.6588 32.474 32.6042 32.8385 31.4062 33.125C30.1823 33.3854 28.8802 33.5156 27.5 33.5156H27.4609C26.9401 33.5156 26.4258 33.4961 25.918 33.457C25.4102 33.418 24.9349 33.3594 24.4922 33.2812V27.7907V27.7907ZM24.4922 27.7907C24.4531 27.785 24.4141 27.7793 24.375 27.7734H24.4922V27.7907V27.7907ZM24.4922 20.2915C24.9469 20.3596 25.3961 20.4057 25.8398 20.4297C26.3216 20.4557 26.8099 20.4688 27.3047 20.4688H27.5C29.6354 20.4688 31.569 20.2018 33.3008 19.668C35.0326 19.1341 36.4323 18.3984 37.5 17.4609V21.0156C37.5 21.6927 37.2396 22.3307 36.7188 22.9297C36.1979 23.5547 35.4818 24.0885 34.5703 24.5312C33.6588 24.974 32.6042 25.3385 31.4062 25.625C30.1823 25.8854 28.8802 26.0156 27.5 26.0156H27.4609C26.9401 26.0156 26.4258 25.9961 25.918 25.957C25.4102 25.918 24.9349 25.8594 24.4922 25.7812V20.2915V20.2915ZM24.4922 20.2915C24.4532 20.2856 24.4141 20.2796 24.375 20.2734H24.4922V20.2915V20.2915ZM17.5 10C18.5677 10.9115 19.9674 11.6406 21.6992 12.1875C23.431 12.7344 25.3646 13.0078 27.5 13.0078C29.6354 13.0078 31.569 12.7409 33.3008 12.207C35.0326 11.6732 36.4323 10.9375 37.5 10V13.5156C37.5 14.1927 37.2396 14.8307 36.7188 15.4297C36.1979 16.0547 35.4818 16.5885 34.5703 17.0312C33.6588 17.474 32.6042 17.8385 31.4062 18.125C30.1823 18.3854 28.8802 18.5156 27.5 18.5156C26.9531 18.5156 26.4193 18.4896 25.8984 18.4375C25.3776 18.3854 24.8958 18.3203 24.4531 18.2422C24.2708 17.2786 23.8021 16.3867 23.0469 15.5664C22.2917 14.7461 21.3021 14.0625 20.0781 13.5156L20.1953 13.5547C19.7786 13.3464 19.349 13.1641 18.9062 13.0078C18.4635 12.8516 17.9948 12.7214 17.5 12.6172V10ZM37.5 6.01562C37.5 6.69271 37.2396 7.33073 36.7188 7.92969C36.1979 8.55469 35.4818 9.08854 34.5703 9.53125C33.6588 9.97396 32.6042 10.3385 31.4062 10.625C30.1823 10.8854 28.8802 11.0156 27.5 11.0156C26.1198 11.0156 24.8177 10.8854 23.5938 10.625C22.3958 10.3385 21.3412 9.97396 20.4297 9.53125C19.5182 9.08854 18.8021 8.55469 18.2812 7.92969C17.7604 7.33073 17.5 6.69271 17.5 6.01562C17.5 5.3125 17.7604 4.66146 18.2812 4.0625C18.8021 3.4375 19.5182 2.90365 20.4297 2.46094C21.3412 2.01823 22.3958 1.66667 23.5938 1.40625C24.8177 1.14583 26.1198 1.01562 27.5 1.01562C28.8802 1.01562 30.1823 1.14583 31.4062 1.40625C32.6042 1.66667 33.6588 2.01823 34.5703 2.46094C35.4818 2.90365 36.1979 3.4375 36.7188 4.0625C37.2396 4.66146 37.5 5.3125 37.5 6.01562ZM2.5 30.4688C3.56771 31.4063 4.96744 32.1419 6.69922 32.6758C8.431 33.2096 10.3646 33.4766 12.5 33.4766C14.6354 33.4766 16.569 33.2096 18.3008 32.6758C20.0326 32.1419 21.4323 31.4063 22.5 30.4688V33.9844C22.5 34.6875 22.2396 35.3385 21.7188 35.9375C21.1979 36.5625 20.4818 37.0964 19.5703 37.5391C18.6588 37.9818 17.6042 38.3333 16.4062 38.5938C15.1823 38.8542 13.8802 38.9844 12.5 38.9844C11.1198 38.9844 9.81771 38.8542 8.59375 38.5938C7.39583 38.3333 6.34115 37.9818 5.42969 37.5391C4.51822 37.0964 3.80209 36.5625 3.28125 35.9375C2.76041 35.3385 2.5 34.6875 2.5 33.9844V30.4688ZM2.5 23.0078C3.56771 23.9193 4.96744 24.6484 6.69922 25.1953C8.431 25.7422 10.3646 26.0156 12.5 26.0156C14.6354 26.0156 16.569 25.7487 18.3008 25.2148C20.0326 24.681 21.4323 23.9453 22.5 23.0078V26.4844C22.5 27.1875 22.2396 27.8385 21.7188 28.4375C21.1979 29.0625 20.4818 29.5964 19.5703 30.0391C18.6588 30.4818 17.6042 30.8333 16.4062 31.0938C15.1823 31.3542 13.8802 31.4844 12.5 31.4844C11.1198 31.4844 9.81771 31.3542 8.59375 31.0938C7.39583 30.8333 6.34115 30.4818 5.42969 30.0391C4.51822 29.5964 3.80209 29.0625 3.28125 28.4375C2.76041 27.8385 2.5 27.1875 2.5 26.4844V23.0078ZM22.5 18.9844C22.5 19.6875 22.2396 20.3385 21.7188 20.9375C21.1979 21.5625 20.4818 22.0964 19.5703 22.5391C18.6588 22.9818 17.6042 23.3333 16.4062 23.5938C15.1823 23.8542 13.8802 23.9844 12.5 23.9844C11.1198 23.9844 9.81771 23.8542 8.59375 23.5938C7.39583 23.3333 6.34115 22.9818 5.42969 22.5391C4.51822 22.0964 3.80209 21.5625 3.28125 20.9375C2.76041 20.3385 2.5 19.6875 2.5 18.9844C2.5 18.3073 2.76041 17.6693 3.28125 17.0703C3.80209 16.4453 4.51822 15.9115 5.42969 15.4688C6.34115 15.026 7.39583 14.6615 8.59375 14.375C9.81771 14.1146 11.1198 13.9844 12.5 13.9844C13.8802 13.9844 15.1823 14.1146 16.4062 14.375C17.6042 14.6615 18.6588 15.026 19.5703 15.4688C20.4818 15.9115 21.1979 16.4453 21.7188 17.0703C22.2396 17.6693 22.5 18.3073 22.5 18.9844Z"
-                      fill="#252525"
-                    />
-                  </svg>
-                  <span class="exchange-point">5,000</span>
-                </div>
-              </div>
-            </div>
-            <div class="reward-card">
-              <a
-                href="https://base-public.akamaized.net/membership-app/images/origin/recollevin-base-shop/rewards/43daffe2-da09-4be7-94e9-0acc621ec999.jpeg"
-                target="_blank"
-              >
-                <img
-                  class="reward-image"
-                  src="https://base-public.akamaized.net/membership-app/images/origin/recollevin-base-shop/rewards/43daffe2-da09-4be7-94e9-0acc621ec999.jpeg"
-                  alt="メンバーシップ特典の画像"
-                />
-              </a>
-              <div class="reward-detail-wrapper">
-                <h4 class="title">10000yen coupon</h4>
-                <div class="exchange-point-wrapper">
-                  <svg
-                    class="exchange-point-icon"
-                    width="40"
-                    height="40"
-                    viewBox="0 0 40 40"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M24.4922 27.7907C24.974 27.8602 25.4557 27.9131 25.9375 27.9492C26.4583 27.9883 26.9792 28.0078 27.5 28.0078C29.6354 28.0078 31.569 27.7409 33.3008 27.207C35.0326 26.6732 36.4323 25.9375 37.5 25V28.5156C37.5 29.1927 37.2396 29.8307 36.7188 30.4297C36.1979 31.0547 35.4818 31.5885 34.5703 32.0312C33.6588 32.474 32.6042 32.8385 31.4062 33.125C30.1823 33.3854 28.8802 33.5156 27.5 33.5156H27.4609C26.9401 33.5156 26.4258 33.4961 25.918 33.457C25.4102 33.418 24.9349 33.3594 24.4922 33.2812V27.7907V27.7907ZM24.4922 27.7907C24.4531 27.785 24.4141 27.7793 24.375 27.7734H24.4922V27.7907V27.7907ZM24.4922 20.2915C24.9469 20.3596 25.3961 20.4057 25.8398 20.4297C26.3216 20.4557 26.8099 20.4688 27.3047 20.4688H27.5C29.6354 20.4688 31.569 20.2018 33.3008 19.668C35.0326 19.1341 36.4323 18.3984 37.5 17.4609V21.0156C37.5 21.6927 37.2396 22.3307 36.7188 22.9297C36.1979 23.5547 35.4818 24.0885 34.5703 24.5312C33.6588 24.974 32.6042 25.3385 31.4062 25.625C30.1823 25.8854 28.8802 26.0156 27.5 26.0156H27.4609C26.9401 26.0156 26.4258 25.9961 25.918 25.957C25.4102 25.918 24.9349 25.8594 24.4922 25.7812V20.2915V20.2915ZM24.4922 20.2915C24.4532 20.2856 24.4141 20.2796 24.375 20.2734H24.4922V20.2915V20.2915ZM17.5 10C18.5677 10.9115 19.9674 11.6406 21.6992 12.1875C23.431 12.7344 25.3646 13.0078 27.5 13.0078C29.6354 13.0078 31.569 12.7409 33.3008 12.207C35.0326 11.6732 36.4323 10.9375 37.5 10V13.5156C37.5 14.1927 37.2396 14.8307 36.7188 15.4297C36.1979 16.0547 35.4818 16.5885 34.5703 17.0312C33.6588 17.474 32.6042 17.8385 31.4062 18.125C30.1823 18.3854 28.8802 18.5156 27.5 18.5156C26.9531 18.5156 26.4193 18.4896 25.8984 18.4375C25.3776 18.3854 24.8958 18.3203 24.4531 18.2422C24.2708 17.2786 23.8021 16.3867 23.0469 15.5664C22.2917 14.7461 21.3021 14.0625 20.0781 13.5156L20.1953 13.5547C19.7786 13.3464 19.349 13.1641 18.9062 13.0078C18.4635 12.8516 17.9948 12.7214 17.5 12.6172V10ZM37.5 6.01562C37.5 6.69271 37.2396 7.33073 36.7188 7.92969C36.1979 8.55469 35.4818 9.08854 34.5703 9.53125C33.6588 9.97396 32.6042 10.3385 31.4062 10.625C30.1823 10.8854 28.8802 11.0156 27.5 11.0156C26.1198 11.0156 24.8177 10.8854 23.5938 10.625C22.3958 10.3385 21.3412 9.97396 20.4297 9.53125C19.5182 9.08854 18.8021 8.55469 18.2812 7.92969C17.7604 7.33073 17.5 6.69271 17.5 6.01562C17.5 5.3125 17.7604 4.66146 18.2812 4.0625C18.8021 3.4375 19.5182 2.90365 20.4297 2.46094C21.3412 2.01823 22.3958 1.66667 23.5938 1.40625C24.8177 1.14583 26.1198 1.01562 27.5 1.01562C28.8802 1.01562 30.1823 1.14583 31.4062 1.40625C32.6042 1.66667 33.6588 2.01823 34.5703 2.46094C35.4818 2.90365 36.1979 3.4375 36.7188 4.0625C37.2396 4.66146 37.5 5.3125 37.5 6.01562ZM2.5 30.4688C3.56771 31.4063 4.96744 32.1419 6.69922 32.6758C8.431 33.2096 10.3646 33.4766 12.5 33.4766C14.6354 33.4766 16.569 33.2096 18.3008 32.6758C20.0326 32.1419 21.4323 31.4063 22.5 30.4688V33.9844C22.5 34.6875 22.2396 35.3385 21.7188 35.9375C21.1979 36.5625 20.4818 37.0964 19.5703 37.5391C18.6588 37.9818 17.6042 38.3333 16.4062 38.5938C15.1823 38.8542 13.8802 38.9844 12.5 38.9844C11.1198 38.9844 9.81771 38.8542 8.59375 38.5938C7.39583 38.3333 6.34115 37.9818 5.42969 37.5391C4.51822 37.0964 3.80209 36.5625 3.28125 35.9375C2.76041 35.3385 2.5 34.6875 2.5 33.9844V30.4688ZM2.5 23.0078C3.56771 23.9193 4.96744 24.6484 6.69922 25.1953C8.431 25.7422 10.3646 26.0156 12.5 26.0156C14.6354 26.0156 16.569 25.7487 18.3008 25.2148C20.0326 24.681 21.4323 23.9453 22.5 23.0078V26.4844C22.5 27.1875 22.2396 27.8385 21.7188 28.4375C21.1979 29.0625 20.4818 29.5964 19.5703 30.0391C18.6588 30.4818 17.6042 30.8333 16.4062 31.0938C15.1823 31.3542 13.8802 31.4844 12.5 31.4844C11.1198 31.4844 9.81771 31.3542 8.59375 31.0938C7.39583 30.8333 6.34115 30.4818 5.42969 30.0391C4.51822 29.5964 3.80209 29.0625 3.28125 28.4375C2.76041 27.8385 2.5 27.1875 2.5 26.4844V23.0078ZM22.5 18.9844C22.5 19.6875 22.2396 20.3385 21.7188 20.9375C21.1979 21.5625 20.4818 22.0964 19.5703 22.5391C18.6588 22.9818 17.6042 23.3333 16.4062 23.5938C15.1823 23.8542 13.8802 23.9844 12.5 23.9844C11.1198 23.9844 9.81771 23.8542 8.59375 23.5938C7.39583 23.3333 6.34115 22.9818 5.42969 22.5391C4.51822 22.0964 3.80209 21.5625 3.28125 20.9375C2.76041 20.3385 2.5 19.6875 2.5 18.9844C2.5 18.3073 2.76041 17.6693 3.28125 17.0703C3.80209 16.4453 4.51822 15.9115 5.42969 15.4688C6.34115 15.026 7.39583 14.6615 8.59375 14.375C9.81771 14.1146 11.1198 13.9844 12.5 13.9844C13.8802 13.9844 15.1823 14.1146 16.4062 14.375C17.6042 14.6615 18.6588 15.026 19.5703 15.4688C20.4818 15.9115 21.1979 16.4453 21.7188 17.0703C22.2396 17.6693 22.5 18.3073 22.5 18.9844Z"
-                      fill="#252525"
-                    />
-                  </svg>
-                  <span class="exchange-point">10,000</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <section class="register">
-          <h3 class="heading">会員登録する</h3>
-          <div class="description-wrapper">
-            <p class="description">
-              会員に登録するにはPay IDアカウントが必要です。
-            </p>
-            <p class="description">
-              会員登録にあたり
-              <a
-                class="description-link"
-                href="https://thebase.com/pages/shop_membership_term"
-                >利用規約</a
-              >
-              に同意したとみなします。
-            </p>
-          </div>
-
-          <form
-            class="mail-magazine"
-            action="https://recollevin.base.shop/membership/register/recollevin-base-shop"
-            method="POST"
-          >
-            <div class="mail-magazine-wrapper">
-              <input
-                class="checkbox"
-                id="subscribe-mail-magazine"
-                type="checkbox"
-                name="subscribe-mail-magazine"
-                value="on"
-                checked
-              />
-              <label class="label" for="subscribe-mail-magazine"
-                >メールマガジンを受け取る</label
-              >
-            </div>
-
-            <div class="link-wrapper">
-              <button class="link" type="submit">会員登録する</button>
-            </div>
-          </form>
-          <p class="login">
-            すでに会員の方は<a class="login-link" href="/membership/login"
-              >こちら</a
-            >
-          </p>
-        </section>
-      </div>
-      <link
-        rel="stylesheet"
-        href="https://cf-baseassets.thebase.in/6d76fc4a167f9985580ebe0550c78a37/asset/shop/membership/guide-521714fc0ba8b6877f1e.css"
-      />
-    </div>
-  </body>
-
-  <script src="scripts/humberger-menu.js"></script>
+    <script src="scripts/humberger-menu.js"></script>
 </html>

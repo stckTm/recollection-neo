@@ -11,7 +11,7 @@
         @include mainTitle;
         width: 100%;
         border-bottom: 1px $cBlack solid;
-        background-color: $cWhite;
+        background-color: $cBackground;
         padding: 10px;
         text-align: center;
     }
@@ -86,7 +86,7 @@
                     justify-content: flex-end;
                     align-items: center;
                     gap: 30px;
-                    background-color: $cWhite;
+                    background-color: $cBackground;
 
                     img {
                         width: 100%;
