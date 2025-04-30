@@ -1,0 +1,135 @@
+@use "../variables/variables" as *;
+@use "../variables/_variables" as *;
+
+.categoryPage {
+    // height: 1000px;
+    text-align: center;
+    position: relative;
+
+    .itemSearchBox {
+        margin: 0 auto;
+        width: 60%;
+        margin-top: 30px;
+
+        p {
+            margin: 30px 0;
+            border-bottom: solid $cLightGray 1px;
+        }
+    }
+
+    .breadcrumb-container {
+        background-color: rgba(255, 255, 255, 0.9);
+        width: 90%;
+
+        position: fixed;
+        z-index: 100;
+        right: 0;
+        transform: translateX(-5%);
+
+        .breadcrumb {
+            width: 100%;
+            border-bottom: solid $cLightGray 1px;
+            margin-top: 10px;
+            margin-left: auto;
+            display: flex;
+            align-items: baseline;
+            justify-content: flex-end;
+            gap: 10px;
+
+            li {
+                @include fontSmall;
+                display: flex;
+                align-items: center;
+                padding: 0;
+
+                &:last-child {
+                    @include subTitle;
+                }
+
+                &:not(:last-child)::after {
+                    content: ">";
+                    margin: 0 10px;
+                    color: $cGray;
+                }
+
+                a {
+                    cursor: pointer !important;
+                }
+            }
+        }
+    }
+
+    .childCategoryList01 {
+        width: 75%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: baseline;
+        // flex-wrap: wrap;
+        margin: 0 auto;
+        padding-top: 5vh;
+
+        > li {
+            padding: 10px;
+            display: block;
+        }
+    }
+
+    &__container {
+        display: flex;
+        flex-direction: column;
+
+        li {
+            display: block;
+            margin-top: 20px;
+            padding: 10px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .categoryPage {
+            // background-color: blue;
+        }
+
+        .childCategoryList01 {
+            width: 85%;
+            flex-wrap: wrap;
+            flex-direction: row;
+            text-align: left;
+            justify-content: flex-start;
+
+            li {
+                width: 50%;
+                text-align: center;
+            }
+        }
+
+        .productList {
+            li {
+                width: 33.33%;
+            }
+        }
+    }
+
+    @media screen and (min-width: 960px) {
+        .categoryPage {
+            // background-color: red;
+        }
+
+        .childCategoryList01 {
+            width: 90%;
+
+            li {
+                width: 25%;
+            }
+        }
+
+        .productList {
+            // width: 100%;
+            li {
+                width: 25%;
+            }
+        }
+    }
+}

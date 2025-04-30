@@ -1,0 +1,30 @@
+@use "../variables/variables" as *;
+
+footer {
+    // background-color: $cWhite;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    width: 100vw;
+    padding: 5px;
+    // height: $footerHeight;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        margin: 0 auto;
+        justify-content: space-around;
+        align-items: center;
+        width: 80%;
+        height: 100%;
+        li {
+            padding: 5px;
+        }
+    }
+
+    .copyright {
+        padding: 5px;
+    }
+}

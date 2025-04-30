@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{PageTitle}</title>
+
+        <!-- {FaviconTag} -->
+        <!-- {CanonicalTag} -->
+
+        <!-- {block:ItemPage} -->
+        <!-- {MetaItemInfoTag} -->
+        <!-- {/block:ItemPage} -->
+
+        <!-- {block:NotItemPage} -->
+        <!-- {MetaShopInfoTag} -->
+        <!-- {/block:NotItemPage} -->
+
+        <!-- {block:IndexPage} -->
+        <!-- {HeadLinkNextPrevTag} -->
+        <!-- トップページのみに出力したいheadコンテンツをここに記述 -->
+        <!-- {/block:IndexPage} -->
+
+        <!-- {block:NotIndexPage} -->
+        <!-- トップページ以外に出力したいheadコンテンツをここに記述 -->
+        <!-- {/block:NotIndexPage} -->
+
+        <link rel="stylesheet" href="destyle.css" />
+        <link rel="stylesheet" href="styles/main.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Hina+Mincho&family=Kaisei+Opti&family=Kiwi+Maru&family=Klee+One&family=Kosugi&family=Kosugi+Maru&family=M+PLUS+1:wght@100..900&family=Noto+Sans+JP:wght@100..900&family=Noto+Serif+JP:wght@200..900&family=Sawarabi+Gothic&family=Sawarabi+Mincho&family=Shippori+Mincho&family=Yomogi&family=Zen+Kaku+Gothic+New&family=Zen+Kurenaido&family=Zen+Maru+Gothic&family=Zen+Old+Mincho&display=swap"
+            rel="stylesheet"
+        />
+
+        <link rel="stylesheet" href="styles/swiper-bundle.min.css" />
+
+        <!-- {BackgroundTag} -->
+        <!-- {GoogleAnalyticsTag} -->
+    </head>
+    <body>
+        <header>
+            <div class="toggle-btn active">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <h1 class="logo">
+                <!-- <a href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba"><img class="logoImage" src="https://base-ec2.akamaized.net/images/user/logo/10d6707759b2d32feea0216c725fae02.png" alt="recollection vintage"></a> -->
+
+                <a
+                    href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba"
+                >
+                    <span class="logoText"
+                        ><img
+                            class="logoImage"
+                            src="https://base-ec2.akamaized.net/images/user/logo/10d6707759b2d32feea0216c725fae02.png"
+                            alt="recollection vintage"
+                    /></span>
+                </a>
+            </h1>
+
+            <div id="baseMenu">
+                <ul class="clearfix">
+                    <li class="base" style="visibility: hidden">
+                        <a
+                            target="_blank"
+                            rel="nofollow"
+                            href="https://thebase.com?from=recollevin-base-shop&amp;p=shop"
+                            ><img
+                                src="/img/shop/base.png"
+                                alt="ネットショップを開設するならBASE"
+                                title="BASE"
+                                height="30"
+                        /></a>
+                    </li>
+                    <li class="cart">
+                        <a
+                            href="/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/items/104755180"
+                        >
+                            <img
+                                src="/img/shop/cart.png"
+                                alt="shopping cart"
+                                height="30"
+                            />
+                            <div class="cart-badge" style="display: none">
+                                <div
+                                    class="cart-qty"
+                                    style="display: none"
+                                ></div>
+                                <script>
+                                    document.addEventListener(
+                                        "DOMContentLoaded",
+                                        function () {
+                                            const cartQty =
+                                                (window.localStorage &&
+                                                    localStorage.getItem(
+                                                        "cartQty"
+                                                    )) ||
+                                                "0";
+                                            if (
+                                                typeof cartQty === "string" &&
+                                                cartQty !== "0"
+                                            ) {
+                                                const cartQtyElements =
+                                                    document.querySelectorAll(
+                                                        ".cart-qty"
+                                                    );
+                                                cartQtyElements.forEach(
+                                                    (element) => {
+                                                        element.textContent =
+                                                            cartQty;
+                                                        element.style.display =
+                                                            "block";
+                                                    }
+                                                );
+                                            }
+                                        }
+                                    );
+                                </script>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <nav style+="" class="active">
+                <ul class="navLinks">
+                    <!-- <li><a href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba">Home</a></li> -->
+                    <li>
+                        <div class="navLinks-category">
+                            <p>Products</p>
+                            <div class="triangle category-open"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a
+                            href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/about"
+                            >About</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/blog"
+                            >Blog</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/membership"
+                            >RC Mile Club</a
+                        >
+                    </li>
+                </ul>
+
+                <div class="navFooter">
+                    <ul class="contactList">
+                        <li>
+                            <a
+                                href="https://www.instagram.com/recollection__vintage/"
+                            >
+                                <img
+                                    src="https://basefile.akamaized.net/recollevin-base-shop/67e547de5c1ca/icons8-instagram-50.png"
+                                    alt="Instagram account"
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://www.threads.net/@recollection__vintage?xmt=AQGzdut22EjYbpPjLGazCVvvFVB6EnTV6GC0zL_I28x5KtE"
+                            >
+                                <img
+                                    src="https://basefile.akamaized.net/recollevin-base-shop/67e5481beb01d/icons8-threads-50.png"
+                                    alt="Threads Acount"
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/inquiry"
+                                ><img
+                                    src="https://basefile.akamaized.net/recollevin-base-shop/67e54845b4afe/icons8-E983B5E4BEBFE789A9-50.png"
+                                    alt="CONTACT お問い合わせ"
+                            /></a>
+                        </li>
+                    </ul>
+                    <div id="i18" class="clearfix">
+                        <div class="lang">
+                            <form
+                                action="https://recollevin.base.shop/i18n/i18n_user_languages/change_language?back=https%3A%2F%2Fadmin.thebase.com%2Fshop_preview%2F42a03cb6e2118f3ab0e664b3bff416ba%2Fitems%2F104755180"
+                                method="post"
+                                accept-charset="utf-8"
+                            >
+                                <div style="display: none">
+                                    <input
+                                        type="hidden"
+                                        name="_method"
+                                        value="POST"
+                                    /><input
+                                        type="hidden"
+                                        name="data[_Token][key]"
+                                        value="8f850c564bd1a8ae1b44f453648f473e885d48629ba0b227ab40226c8cab0304c86227143e95977618f30e1e1c209ed21e6904e49fa5472f2949329d59cd0bf1"
+                                        id="Token605871048"
+                                        autocomplete="off"
+                                    />
+                                </div>
+                                <input
+                                    type="hidden"
+                                    name="data[UserLanguage][shop_id]"
+                                    value="recollevin-base-shop"
+                                    id="UserLanguageShopId"
+                                />
+                                <div class="input select required">
+                                    <select
+                                        name="data[UserLanguage][language_code]"
+                                        class="x_i18nSelectBox"
+                                        required="required"
+                                    >
+                                        <option value="ja" selected="selected">
+                                            日本語
+                                        </option>
+                                        <option value="en">English</option>
+                                    </select>
+                                </div>
+                                <div style="display: none">
+                                    <input
+                                        type="hidden"
+                                        name="data[_Token][fields]"
+                                        value="e9d73336b47c459576ddd2c43ab9a927c0d80372%3AUserLanguage.shop_id"
+                                        id="TokenFields2035481805"
+                                        autocomplete="off"
+                                    /><input
+                                        type="hidden"
+                                        name="data[_Token][unlocked]"
+                                        value=""
+                                        id="TokenUnlocked190511496"
+                                        autocomplete="off"
+                                    />
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="currency">
+                            <form
+                                action="https://recollevin.base.shop/i18n/i18n_user_currencies/change_currency?back=https%3A%2F%2Fadmin.thebase.com%2Fshop_preview%2F42a03cb6e2118f3ab0e664b3bff416ba%2Fitems%2F104755180"
+                                method="post"
+                                accept-charset="utf-8"
+                            >
+                                <div style="display: none">
+                                    <input
+                                        type="hidden"
+                                        name="_method"
+                                        value="POST"
+                                    /><input
+                                        type="hidden"
+                                        name="data[_Token][key]"
+                                        value="8f850c564bd1a8ae1b44f453648f473e885d48629ba0b227ab40226c8cab0304c86227143e95977618f30e1e1c209ed21e6904e49fa5472f2949329d59cd0bf1"
+                                        id="Token1732801442"
+                                        autocomplete="off"
+                                    />
+                                </div>
+                                <input
+                                    type="hidden"
+                                    name="data[UserCurrency][shop_id]"
+                                    value="recollevin-base-shop"
+                                    id="UserCurrencyShopId"
+                                />
+                                <div class="input select">
+                                    <select
+                                        name="data[UserCurrency][currency_code]"
+                                        class="x_i18nSelectBox"
+                                    >
+                                        <option value="JPY" selected="selected">
+                                            JPY
+                                        </option>
+                                        <option value="USD">USD</option>
+                                        <option value="EUR">EUR</option>
+                                    </select>
+                                </div>
+                                <div style="display: none">
+                                    <input
+                                        type="hidden"
+                                        name="data[_Token][fields]"
+                                        value="2c223643eda15387af2f3d7d59300f065d772008%3AUserCurrency.shop_id"
+                                        id="TokenFields171376907"
+                                        autocomplete="off"
+                                    /><input
+                                        type="hidden"
+                                        name="data[_Token][unlocked]"
+                                        value=""
+                                        id="TokenUnlocked1392090667"
+                                        autocomplete="off"
+                                    />
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-open category-open">
+                    <ul id="appsItemCategoryTag">
+                        <li class="appsItemCategoryTag_child">
+                            <a
+                                href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/5661357"
+                                class="mainHeaderNavColor"
+                                >ALL ITEMS</a
+                            >
+                            <ul class="appsItemCategoryTag_lowerchild">
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/5661361"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >Outerwear</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/5661358"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >Tops</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/5661363"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >Bottoms</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/5661365"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >Shoes</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/5661364"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >
+                                        Accessory / Bag</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6470178"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >Ladies</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="appsItemCategoryTag_child">
+                            <a
+                                href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6560053"
+                                class="mainHeaderNavColor"
+                                >SHOP</a
+                            >
+                            <ul class="appsItemCategoryTag_lowerchild">
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6560056"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >Tokyo</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6560057"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >Kumamoto</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="appsItemCategoryTag_child">
+                            <a
+                                href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6470179"
+                                class="mainHeaderNavColor"
+                                >BRANDS</a
+                            >
+                            <ul class="appsItemCategoryTag_lowerchild">
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6472944"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >adidas</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6470182"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >ARNYS PARIS</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6470221"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >Barbour</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6470286"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >Burburry's</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6470184"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >BONEVILLE</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6470185"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >CÉLINE</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6470186"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >Charvet</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6470187"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >C.P.COMPANY</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6470749"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >Dior</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6470188"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >Dries Van Noten</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6470194"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >eskandar</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6470190"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >GUCCI</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6470191"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >GIORGIO ARMANI</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6470189"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >HELMUT LANG</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6470195"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >HERMÈS PARIS</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6470197"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >JIL SANDER</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6470226"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >LACOSTE</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6470222"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >Levi Strauss &amp; Co.</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6527814"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >LOEWE</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6470198"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >Maison Martin Margiela</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6470199"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >Marithé + François Girbaud</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6599124"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >SERAPHIN</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6470200"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >PRADA / Miu Miu</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6470201"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >SHRIN GUILD</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6470202"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >STONE ISLAND</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6470203"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >Yves Saint Laurent</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6470211"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >W.&amp;.L.T. Wild And Lethal Trash</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6470227"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >Euro Vintage</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6470229"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >Military Items</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="https://admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/categories/6470215"
+                                        class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                        >Other Items</a
+                                    >
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="itemSearchBox">
+                        <!-- <form action="//admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/search" method="get">
+                <input type="text" name="q" placeholder="商品を検索" value=""/>
+                <button type="submit"><img src="https://basefile.akamaized.net/recollevin-base-shop/6800bcd530de1/icons8-search-50.png"></button> 
+              </form> -->
+                        <div class="column itemSearch">
+                            <form
+                                id="x_itemSearchForm"
+                                class="itemSearch__form"
+                                action="//admin.thebase.com/shop_preview/42a03cb6e2118f3ab0e664b3bff416ba/search"
+                                method="get"
+                            >
+                                <input
+                                    class="itemSearch__field"
+                                    type="text"
+                                    name="q"
+                                    placeholder="SEARCH"
+                                    value=""
+                                />
+                                <button class="itemSearch__btn" type="submit">
+                                    <span
+                                        id="x_iconSearch"
+                                        class="mainHeaderNavColor si-search"
+                                        ><img
+                                            src="https://basefile.akamaized.net/recollevin-base-shop/6800bcd530de1/icons8-search-50.png"
+                                    /></span>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div id="mask" class="active"></div>
+        </header>
+        <!-- 商品ページで出力 -->
+
+        <div id="page" class="aboutPage">
+            <div class="concept">
+                <h1>Concept</h1>
+
+                <img src="img/hero/hero-img4.jpg" alt="" />
+                <h2 class="subTitle">Re + Collection</h2>
+                <p>
+                    国や年代に関わらず背景を重んじた洋服を提案<br />
+                    系譜や歴史を大切にし<br />
+                    ファッションへの探求心を忘れないお店です
+                </p>
+            </div>
+            <div class="shopList">
+                <h1>Shop List</h1>
+                <ul>
+                    <li>
+                        <div class="shopInfo">
+                            <img src="img/tokyo_logo.jpg" alt="" />
+                        </div>
+                        <div class="shopInfo">
+                            <h2>Tokyo</h2>
+                            <div class="shopInfo__text">
+                                <p>
+                                    〒153-0053<br />
+                                    東京都目黒区五本木2-15-1<br />
+                                    アンドウビル 1F
+                                </p>
+                                <p>OPEN: 13:00-20:00</p>
+
+                                <p class="small">
+                                    ※最新の営業情報は<br />Instagramをご確認ください
+                                </p>
+                            </div>
+                            <div class="shopInfo__sns">
+                                <a
+                                    href="https://www.instagram.com/recollection_tokyo/"
+                                >
+                                    <img
+                                        src="img/logo/icons8-instagram-50.png"
+                                        alt="Tokyo Instagram"
+                                    />
+                                </a>
+
+                                <!-- <a href="">
+                                    <img
+                                        src="img/logo/icons8-threads-50.png"
+                                        alt=""
+                                    />
+                                </a> -->
+                            </div>
+                            <div class="shopInfo__location">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3242.6837822542097!2d139.68953967656327!3d35.63552133248246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188b34df28d9eb%3A0xdcad2118fd60c14c!2z44CSMTUzLTAwNTMg5p2x5Lqs6YO955uu6buS5Yy65LqU5pys5pyo77yS5LiB55uu77yR77yV4oiS77yRIOOCouODs-ODieOCpuODk-ODqw!5e0!3m2!1sja!2sjp!4v1744814320079!5m2!1sja!2sjp"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                ></iframe>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="shopInfo">
+                            <h2>Kumamoto</h2>
+                            <div class="shopInfo__text">
+                                <p>
+                                    〒860-0845<br />
+                                    熊本県熊本市中央区上通町<br />
+                                    みどりビル 2F
+                                </p>
+                                <p>OPEN: 13:00-20:00</p>
+                                <p>定休日: 水曜日,木曜日</p>
+                            </div>
+                            <div class="shopInfo__sns">
+                                <a
+                                    href="https://www.instagram.com/recollection__vintage/"
+                                >
+                                    <img
+                                        src="img/logo/icons8-instagram-50.png"
+                                        alt="Kumamoto Instagram"
+                                    />
+                                </a>
+
+                                <a
+                                    href="https://www.threads.net/@recollection__vintage"
+                                >
+                                    <img
+                                        src="img/logo/icons8-threads-50.png"
+                                        alt="Kumamoto Threads"
+                                    />
+                                </a>
+                            </div>
+                            <div class="shopInfo__location">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3353.4902322760036!2d130.7124408!3d32.8057734!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3540f54e24be27db%3A0xbd44160ce2f8efda!2srecollection%20vintage!5e0!3m2!1sen!2sjp!4v1744811355329!5m2!1sen!2sjp"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"
+                                ></iframe>
+                            </div>
+                        </div>
+                        <div class="shopInfo">
+                            <img src="img/kumamoto_mix2.jpg" alt="" />
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <footer>
+            <ul>
+                <li>
+                    <a
+                        href="https://admin.thebase.com/shop_preview/c3aac403dcc8a9ddd374bf74efe63a92/privacy"
+                        >プライバシーポリシー</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="https://admin.thebase.com/shop_preview/c3aac403dcc8a9ddd374bf74efe63a92/law"
+                        >特定商取引法に基づく表記</a
+                    >
+                </li>
+            </ul>
+            <div class="copyright">
+                <small>© recollection vintage All rights reserved.</small>
+            </div>
+        </footer>
+
+        <script src="scripts/humberger-menu.js"></script>
+        <script src="https://basefile.akamaized.net/recollevin-base-shop/67de5f5448332/humberger-menu.js"></script>
+
+        <!-- {/block:ItemPage} -->
+        <script src="scripts/humberger-menu.js"></script>
+    </body>
+</html>

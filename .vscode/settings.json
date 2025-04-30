@@ -1,0 +1,31 @@
+{
+    "liveServer.settings.port": 5501,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.tabSize": 2,
+    "editor.insertSpaces": true,
+    "editor.detectIndentation": false,
+    "[scss]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false
+    },
+    "[javascript]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false
+    },
+    "[html]": {
+        "editor.tabSize": 2,
+        "editor.insertSpaces": true,
+        "editor.detectIndentation": false,
+        "editor.formatOnSave": true,
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "html.format.wrapLineLength": 120,
+        "html.format.wrapAttributes": "force-expand-multiline",
+        "html.format.extraLiners": "head, body, /html",
+        "html.format.indentInnerHtml": true,
+        "html.format.preserveNewLines": true,
+        "html.format.maxPreserveNewLines": 2
+    }
+}
