@@ -16,6 +16,19 @@ document.addEventListener("DOMContentLoaded", function () {
     // すべての画像に対してクリックイベントを追加
     document.querySelectorAll(".swiper-slide img").forEach((img) => {
         img.onclick = function () {
+            // 特定のクラスを持つスワイパーの場合はモーダルを表示しない
+            const swiper = this.closest(".swiper");
+            if (
+                swiper &&
+                swiper.classList.contains("mySwiper") &&
+                swiper.classList.contains("swiper-initialized") &&
+                swiper.classList.contains("swiper-horizontal") &&
+                swiper.classList.contains("swiper-free-mode") &&
+                swiper.classList.contains("swiper-watch-progress") &&
+                swiper.classList.contains("swiper-thumbs")
+            ) {
+                return;
+            }
             modal.classList.add("show");
             modalImg.src = this.src;
         };

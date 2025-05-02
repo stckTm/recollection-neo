@@ -1,0 +1,71 @@
+@use "../variables/variables" as *;
+
+.contactPage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .main {
+        width: 100%;
+        margin-top: $marginLg;
+    }
+
+    .inquirySection {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 80%;
+        // gap: 5vh;
+        form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        dl {
+            margin-top: 30px;
+            width: 90%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+
+            dd {
+                width: 100%;
+                margin-bottom: 10px;
+            }
+
+            dt {
+                font-weight: 200 !important;
+                span {
+                    color: $cRed;
+                }
+            }
+        }
+        input,
+        textarea {
+            background-color: $cWhite;
+            border: none;
+            border: solid 1px rgba(191, 191, 191, 0.6);
+            padding: 10px;
+            width: 100% !important;
+        }
+
+        textarea {
+            height: 20vh;
+            min-height: 100px;
+        }
+
+        h1 {
+            @include mainTitle;
+            width: 90%;
+            border-bottom: 1px $cBlack solid;
+            margin-bottom: 10px;
+        }
+    }
+}

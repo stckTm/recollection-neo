@@ -100,10 +100,13 @@
         width: 90%;
         margin: 0 auto;
         // height: 80px;
-        label,
+        label {
+            @include fontSmaller;
+        }
         select {
             @include fontSmaller;
             display: inline-block;
+            padding: 3px 10px;
         }
 
         #itemSelect {
@@ -152,32 +155,39 @@
         width: 90%;
         text-align: start;
         margin: 0 auto;
-        padding: 20px;
+        padding: 10px;
 
-        a {
-            border-bottom: solid 1px $cGray;
+        .postageOpen {
+            @include fontSmaller;
         }
 
         p {
             margin: 10px 0;
             text-align: left;
-            @include fontSmall;
+            @include fontSmaller;
         }
 
         .membershipPoint {
-            margin-bottom: 50px;
+            // margin-bottom: 30px;
             // @include  fontNormal;
 
             p {
                 text-align: center;
             }
 
+            &__attentionLink {
+                text-decoration: underline;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
             &__amountWrapper {
-                @include fontNormal;
+                @include subTitle;
             }
 
             &__amount {
-                font-size: 1.5rem;
+                @include subTitle;
                 font-weight: 200;
             }
 
