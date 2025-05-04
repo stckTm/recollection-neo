@@ -2,7 +2,6 @@
 @use "../variables/_variables" as *;
 
 .categoryPage {
-    // height: 1000px;
     text-align: center;
     position: relative;
 
@@ -88,9 +87,7 @@
     }
 
     @media (min-width: 768px) {
-        .categoryPage {
-            // background-color: blue;
-        }
+        // background-color: blue;
 
         .childCategoryList01 {
             width: 85%;
@@ -104,12 +101,6 @@
                 text-align: center;
             }
         }
-
-        .productList {
-            li {
-                width: 33.33%;
-            }
-        }
     }
 
     @media screen and (min-width: 960px) {
@@ -120,13 +111,6 @@
         .childCategoryList01 {
             width: 90%;
 
-            li {
-                width: 25%;
-            }
-        }
-
-        .productList {
-            // width: 100%;
             li {
                 width: 25%;
             }

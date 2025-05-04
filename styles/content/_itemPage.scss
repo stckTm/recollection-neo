@@ -64,14 +64,15 @@
         }
 
         .mySwiper {
-            padding: 10px;
+            padding: 10px 0;
             position: relative;
 
             .swiper-slide {
                 opacity: 0.4;
 
                 img {
-                    width: 100%;
+                    // width: 100%;
+                    aspect-ratio: 2/3;
                     height: 100%;
                     object-fit: cover;
                 }
@@ -223,7 +224,7 @@
         margin: 0 auto;
         p {
             @include fontNormal;
-            line-height: 150%;
+            line-height: 1.5 !important;
             text-align: left;
             margin-bottom: 70px;
 
@@ -318,7 +319,6 @@
     }
 }
 
-// モーダル用のスタイル
 .modal {
     display: none;
     position: fixed;
@@ -356,7 +356,6 @@
     }
 }
 
-// モーダルが表示されているときのスタイル
 .modal.show {
     display: flex;
     justify-content: center;

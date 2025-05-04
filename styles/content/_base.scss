@@ -49,13 +49,13 @@
         text-align: start;
 
         h2 {
-            @include fontSmall;
+            @include fontSmaller;
             line-height: 1.5;
         }
 
         p {
             text-align: end;
-            @include fontSmall;
+            @include fontSmaller;
         }
 
         &:hover {
@@ -68,6 +68,30 @@
             p {
                 text-align: center;
             }
+        }
+    }
+
+    @media (min-width: 768px) {
+        // background-color: blue;
+
+        li {
+            width: 33.33%;
+        }
+    }
+
+    @media screen and (min-width: 960px) {
+        &__item {
+            width: 90%;
+        }
+
+        // width: 100%;
+        // li {
+        //     width: 25%;
+        // }
+    }
+    @media screen and (min-width: 1921px) {
+        li {
+            width: 25%;
         }
     }
 }

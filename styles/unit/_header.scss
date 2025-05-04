@@ -4,7 +4,7 @@ header {
     height: $headerHeight;
     background-color: $cBackground;
     width: 100%;
-    padding: 0px 7.25vw;
+    padding: 0px 5cqmax;
     position: fixed;
     top: 0;
     left: 0;
@@ -16,8 +16,8 @@ header {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 
     img {
-        width: 25px;
-        height: 25px;
+        width: 20px;
+        height: 20px;
     }
 
     .logo {
@@ -59,10 +59,6 @@ header {
     }
 
     #baseMenu {
-        // display: flex;
-        // ul {
-        //   display: flex;
-        // }
         .base {
             display: none;
         }
@@ -79,7 +75,7 @@ header {
         border-top: solid 1px rgba($color: $cGray, $alpha: 0.6);
         padding: 3vw 5vw 90px;
         width: $HamburgerMenuWidth;
-        height: calc(100vh - #{$headerHeight});
+        height: calc(100svh - #{$headerHeight});
 
         display: flex;
         flex-direction: column;
@@ -124,7 +120,7 @@ header {
                             position: absolute;
                             top: 0;
                             left: $HamburgerMenuWidth;
-                            height: calc(100vh - #{$headerHeight});
+                            height: calc(100svh - #{$headerHeight});
                             width: 100vw - $HamburgerMenuWidth;
                             padding: 40px 30px 150px;
                             background-color: $cBackground;
@@ -154,7 +150,7 @@ header {
         .navFooter {
             display: flex;
             flex-direction: column;
-            height: 15vh;
+            height: 15svh;
             justify-content: space-between;
             width: 100%;
 

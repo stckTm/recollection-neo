@@ -36,7 +36,7 @@ $marginSm: 1vh;
 }
 
 @mixin fontSmaller {
-    font-size: 70% !important;
+    font-size: 80% !important;
     font-weight: 100 !important;
 }
 
@@ -172,9 +172,14 @@ html {
         &__field {
             width: 80% !important;
             height: 30px !important;
-            // border: none !important;
+            border: none !important;
             padding: 7px !important;
+            box-shadow: none !important;
             background-color: $cBackground;
+
+            &:focus-visible {
+                outline: none !important;
+            }
         }
 
         &__btn {
