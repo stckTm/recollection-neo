@@ -1772,7 +1772,7 @@ html {
   width: 100%;
   border-bottom: 1px #000000 solid;
   background-color: #f5f4f2;
-  padding: 10px;
+  padding: 1vh;
   text-align: center;
 }
 .aboutPage h2 {
@@ -1792,7 +1792,7 @@ html {
   text-align: center;
   background-color: rgba(211, 211, 211, 0.2235294118);
   padding-bottom: 20px;
-  gap: 30px;
+  gap: 3vh;
 }
 .aboutPage .concept img {
   width: 80%;
@@ -1815,20 +1815,20 @@ html {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 50px;
+  gap: 3vh;
 }
 .aboutPage .shopList ul {
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 3vh;
   width: 100%;
 }
 .aboutPage .shopList ul li {
-  padding: 20px;
+  padding: 3vh;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
-  gap: 10px;
+  gap: 1vh;
 }
 .aboutPage .shopList ul li .shopInfo {
   width: 100%;
@@ -1836,47 +1836,8 @@ html {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
-  gap: 30px;
+  gap: 3vh;
   background-color: #f5f4f2;
-}
-.aboutPage .shopList ul li .shopInfo img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.aboutPage .shopList ul li .shopInfo__sns {
-  display: flex;
-  flex-direction: row;
-  gap: 10px;
-}
-.aboutPage .shopList ul li .shopInfo__sns a {
-  height: 15px;
-}
-.aboutPage .shopList ul li .shopInfo__sns a img {
-  width: 30px;
-  height: 30px;
-}
-.aboutPage .shopList ul li .shopInfo__text h2 {
-  width: 100%;
-  margin: 20px 0;
-  text-align: start;
-  border-bottom: 1px #000000 solid;
-}
-.aboutPage .shopList ul li .shopInfo__text p {
-  margin: 10px 0;
-  font-size: 90% !important;
-  font-weight: 200 !important;
-}
-.aboutPage .shopList ul li .shopInfo__text p:last-child {
-  margin-bottom: 0;
-}
-.aboutPage .shopList ul li .shopInfo__text p .small {
-  font-size: 80% !important;
-  font-weight: 100 !important;
-}
-.aboutPage .shopList ul li .shopInfo__location {
-  width: 100%;
 }
 .aboutPage .shopList ul li .shopInfo img {
   width: 100%;
@@ -1884,9 +1845,76 @@ html {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.aboutPage .shopList ul li .shopInfo__detail {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
+}
+.aboutPage .shopList ul li .shopInfo__detail__text {
+  width: 100%;
+  text-align: center;
+}
+.aboutPage .shopList ul li .shopInfo__detail__text h2 {
+  width: 100%;
+  margin: 3vh 0;
+  border-bottom: 1px #000000 solid;
+}
+.aboutPage .shopList ul li .shopInfo__detail__text p {
+  margin: 1vh 0;
+  font-size: 90% !important;
+  font-weight: 200 !important;
+}
+.aboutPage .shopList ul li .shopInfo__detail__text p:last-child {
+  margin-bottom: 0;
+}
+.aboutPage .shopList ul li .shopInfo__detail__text p .small {
+  font-size: 80% !important;
+  font-weight: 100 !important;
+}
+.aboutPage .shopList ul li .shopInfo__detail__sns {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1vh;
+}
+.aboutPage .shopList ul li .shopInfo__detail__sns a {
+  height: 1rem;
+}
+.aboutPage .shopList ul li .shopInfo__detail__sns a img {
+  width: 30px;
+  height: 30px;
+}
+.aboutPage .shopList ul li .shopInfo__location {
+  width: 100%;
+}
 .aboutPage .shopList ul li .shopInfo iframe {
   width: 100%;
   border: 1px #000000 solid;
+}
+@media (min-width: 768px) {
+  .aboutPage .shopInfo__detail {
+    flex-direction: row !important;
+    width: 70% !important;
+    gap: 3vh !important;
+  }
+  .aboutPage .shopInfo__detail__text {
+    width: 50% !important;
+    text-align: start !important;
+  }
+  .aboutPage .shopInfo__detail__sns {
+    width: 50% !important;
+  }
+}
+@media (min-width: 1024px) {
+  .aboutPage .shopList ul li {
+    flex-direction: row !important;
+  }
+  .aboutPage .shopList .shopInfo__location iframe {
+    height: 250px !important;
+  }
 }
 
 * {

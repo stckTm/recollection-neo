@@ -15,6 +15,10 @@ $marginLg: 5vh;
 $marginMd: 3vh;
 $marginSm: 1vh;
 
+$tabletVP: 768px;
+$laptopVP: 1280px;
+$retinaVP: 2560px;
+
 @mixin fontNormal {
     font-size: 100%;
     font-weight: 200;
@@ -40,7 +44,7 @@ $marginSm: 1vh;
     font-weight: 100 !important;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: $tabletVP) {
     @mixin fontNormal {
         font-size: 120% !important;
         font-weight: 300 !important;
@@ -53,6 +57,33 @@ $marginSm: 1vh;
 
     @mixin subTitle {
         font-size: 110% !important;
+        font-weight: 300 !important;
+    }
+
+    @mixin fontSmall {
+        font-size: 90% !important;
+        font-weight: 200 !important;
+    }
+
+    @mixin fontSmaller {
+        font-size: 70% !important;
+        font-weight: 100 !important;
+    }
+}
+
+@media screen and (max-width: $laptopVP) {
+    @mixin fontNormal {
+        font-size: 130% !important;
+        font-weight: 300 !important;
+    }
+
+    @mixin mainTitle {
+        font-size: 160% !important;
+        font-weight: 300 !important;
+    }
+
+    @mixin subTitle {
+        font-size: 120% !important;
         font-weight: 300 !important;
     }
 

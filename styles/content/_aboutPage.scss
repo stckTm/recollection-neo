@@ -5,14 +5,14 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 5vh;
+    gap: $marginLg;
 
     h1 {
         @include mainTitle;
         width: 100%;
         border-bottom: 1px $cBlack solid;
         background-color: $cBackground;
-        padding: 10px;
+        padding: $marginSm;
         text-align: center;
     }
 
@@ -33,13 +33,11 @@
         text-align: center;
         background-color: #d3d3d339;
         padding-bottom: 20px;
-        gap: 30px;
-        // background-color: $cLightGray;
+        gap: $marginMd;
 
         img {
             width: 80%;
             max-width: 80vh;
-            // height: 60vh;
             max-height: 60vh;
             object-fit: cover;
         }
@@ -47,7 +45,6 @@
         h2 {
             border: none;
             width: 80%;
-            // margin: 0 auto;
         }
 
         p {
@@ -62,89 +59,125 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        gap: 50px;
+        gap: $marginMd;
 
         ul {
             display: flex;
             flex-direction: column;
-            gap: 30px;
+            gap: $marginMd;
             width: 100%;
 
             li {
-                // background-color: #d3d3d339;
-                padding: 20px;
+                padding: $marginMd;
                 display: flex;
-                flex-direction: row;
+                flex-direction: column;
                 width: 100%;
-                gap: 10px;
+                gap: $marginSm;
 
                 .shopInfo {
                     width: 100%;
-                    // height: 30vh;
                     display: flex;
                     flex-direction: column;
                     justify-content: flex-end;
                     align-items: center;
-                    gap: 30px;
+                    gap: $marginMd;
                     background-color: $cBackground;
 
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
-
-                    &__sns {
-                        display: flex;
-                        flex-direction: row;
-                        // margin-bottom: 10px;
-                        gap: 10px;
-
-                        a {
-                            height: 15px;
-
-                            img {
-                                width: 30px;
-                                height: 30px;
-                            }
-                        }
-                    }
-
-                    &__text {
-                        h2 {
-                            width: 100%;
-                            margin: 20px 0;
-                            text-align: start;
-                            border-bottom: 1px $cBlack solid;
-                        }
-                        p {
-                            margin: 10px 0;
-                            @include fontSmall;
-
-                            &:last-child {
-                                margin-bottom: 0;
-                            }
-
-                            .small {
-                                @include fontSmaller;
-                            }
-                        }
-                    }
-
-                    &__location {
-                        width: 100%;
-                        // height: 40%;
-                    }
                     img {
                         width: 100%;
                         height: 500px;
                         object-fit: cover;
                     }
 
+                    &__detail {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        gap: $marginSm;
+
+                        &__text {
+                            width: 100%;
+                            text-align: center;
+                            h2 {
+                                width: 100%;
+                                margin: $marginMd 0;
+                                border-bottom: 1px $cBlack solid;
+                            }
+                            p {
+                                margin: $marginSm 0;
+                                @include fontSmall;
+
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+
+                                .small {
+                                    @include fontSmaller;
+                                }
+                            }
+                        }
+
+                        &__sns {
+                            width: 100%;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            gap: $marginSm;
+
+                            a {
+                                height: 1rem;
+
+                                img {
+                                    width: 30px;
+                                    height: 30px;
+                                }
+                            }
+                        }
+                    }
+
+                    &__location {
+                        width: 100%;
+                    }
+
                     iframe {
                         width: 100%;
                         border: 1px $cBlack solid;
                     }
+                }
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        .shopInfo {
+            &__detail {
+                flex-direction: row !important;
+                width: 70% !important;
+                gap: $marginMd !important;
+                // flex-wrap: wrap;
+                &__text {
+                    width: 50% !important;
+                    text-align: start !important;
+                }
+                &__sns {
+                    width: 50% !important;
+                }
+            }
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .shopList {
+            ul {
+                li {
+                    flex-direction: row !important;
+                }
+            }
+
+            .shopInfo__location {
+                iframe {
+                    height: 250px !important;
                 }
             }
         }
