@@ -1,17 +1,57 @@
 @use "../variables/variables" as *;
 
 .blog {
+    .main {
+        width: 90%;
+        margin: 0 auto;
+        text-align: center;
+
+        .blog_contents {
+            min-height: 150px;
+        }
+
+        img {
+            width: 80%;
+            margin: $marginSm 0;
+            max-width: 500px !important;
+            offset: 0;
+        }
+
+        .blog_body {
+            p {
+                // line-height: 1.1em;
+            }
+        }
+
+        .read_more {
+            bottom: 30px !important;
+
+            a {
+                border: 1px solid $cGray !important;
+                padding: $marginSm $marginLg;
+                background: transparent;
+                transition: all 0.3s;
+                font-weight: 200 !important;
+                color: $cBlack !important;
+
+                &:hover {
+                    background: $cGray;
+                    color: $cWhite !important;
+                }
+            }
+        }
+    }
     .blog_contents {
         width: 100%;
         text-align: center;
 
         .blog_title {
-            margin-top: 3em;
+            margin-top: $marginLg;
         }
     }
 
     .blog_body {
-        width: 90% !important;
+        width: 95%;
         margin: 0 auto;
         // text-align: center;
 
@@ -19,14 +59,28 @@
             width: 100%;
             margin: 0 auto;
 
-            p {
-                // text-align: start;
-            }
-
             img {
                 width: 80%;
-                margin: 10% 0;
+                margin: $marginMd 0;
                 max-width: 500px !important;
+            }
+
+            p {
+                text-align: start;
+                width: 100%;
+                position: relative;
+            }
+        }
+    }
+
+    @media (min-width: 768px) {
+        .blog_body {
+            width: 70%;
+
+            div {
+                p {
+                    text-align: center;
+                }
             }
         }
     }

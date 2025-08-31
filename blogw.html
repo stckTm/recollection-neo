@@ -1,0 +1,1227 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>{PageTitle}</title>
+
+        <!-- {FaviconTag} -->
+        <!-- {CanonicalTag} -->
+
+        <!-- {block:ItemPage} -->
+        <!-- {MetaItemInfoTag} -->
+        <!-- {/block:ItemPage} -->
+
+        <!-- {block:NotItemPage} -->
+        <!-- {MetaShopInfoTag} -->
+        <!-- {/block:NotItemPage} -->
+
+        <!-- {block:IndexPage} -->
+        <!-- {HeadLinkNextPrevTag} -->
+        <!-- トップページのみに出力したいheadコンテンツをここに記述 -->
+        <!-- {/block:IndexPage} -->
+
+        <!-- {block:NotIndexPage} -->
+        <!-- トップページ以外に出力したいheadコンテンツをここに記述 -->
+        <!-- {/block:NotIndexPage} -->
+
+        <link rel="stylesheet" href="destyle.css" />
+        <link rel="stylesheet" href="styles/main.css" />
+
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,300;1,400;1,500;1,700;1,800;1,900&family=Noto+Serif+JP:wght@200..900&family=Quicksand:wght@300..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Google Tag 
+
+    <!-- {BackgroundTag} -->
+        <!-- {GoogleAnalyticsTag} -->
+    </head>
+    <body>
+        <header>
+            <div class="toggle-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <h1 class="logo">
+                <!-- <a href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3"><img class="logoImage" src="https://base-ec2.akamaized.net/images/user/logo/da3d24b7b1d76c9c8bae09ebaaaf1ce3.png" alt="recollection vintage"></a> -->
+
+                <a
+                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3"
+                >
+                    <span class="logoText">recollection</span>
+                </a>
+            </h1>
+
+            <div id="baseMenu">
+                <ul class="clearfix">
+                    <li class="base" style="visibility: hidden">
+                        <a
+                            target="_blank"
+                            rel="nofollow"
+                            href="https://thebase.com?from=recollevin-base-shop&amp;p=shop"
+                            ><img
+                                src="/img/shop/base.png"
+                                alt="ネットショップを開設するならBASE"
+                                title="BASE"
+                                height="30"
+                        /></a>
+                    </li>
+                    <li class="cart">
+                        <a
+                            href="/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470179"
+                        >
+                            <img
+                                src="/img/shop/cart.png"
+                                alt="shopping cart"
+                                height="30"
+                            />
+                            <div class="cart-badge" style="display: none">
+                                <div
+                                    class="cart-qty"
+                                    style="display: none"
+                                ></div>
+                                <script>
+                                    document.addEventListener(
+                                        "DOMContentLoaded",
+                                        function () {
+                                            const cartQty =
+                                                (window.localStorage &&
+                                                    localStorage.getItem(
+                                                        "cartQty"
+                                                    )) ||
+                                                "0";
+                                            if (
+                                                typeof cartQty === "string" &&
+                                                cartQty !== "0"
+                                            ) {
+                                                const cartQtyElements =
+                                                    document.querySelectorAll(
+                                                        ".cart-qty"
+                                                    );
+                                                cartQtyElements.forEach(
+                                                    (element) => {
+                                                        element.textContent =
+                                                            cartQty;
+                                                        element.style.display =
+                                                            "block";
+                                                    }
+                                                );
+                                            }
+                                        }
+                                    );
+                                </script>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <nav style+="">
+                <ul class="navLinks">
+                    <li>
+                        <a
+                            href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3"
+                            >Home</a
+                        >
+                    </li>
+                    <li>
+                        <div class="navLinks-category">
+                            <p>Products</p>
+                            <div class="triangle"></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a
+                            href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/about"
+                            >About</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/blog"
+                            >Blog</a
+                        >
+                    </li>
+                    <li>
+                        <a
+                            href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/membership"
+                            >RC Mile Club</a
+                        >
+                    </li>
+                </ul>
+
+                <ul>
+                    <li>
+                        <a href=" http://">
+                            <img src="img/instagram.png" alt="" />
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/inquiry"
+                            >Contact</a
+                        >
+                    </li>
+                </ul>
+                <div id="i18" class="clearfix">
+                    <div class="lang">
+                        <form
+                            action="https://recollevin.base.shop/i18n/i18n_user_languages/change_language?back=https%3A%2F%2Fadmin.thebase.com%2Fshop_preview%2Fb6f9a14411f86bf7848fdc93b4eb26f3%2Fcategories%2F6470179"
+                            method="post"
+                            accept-charset="utf-8"
+                        >
+                            <div style="display: none">
+                                <input
+                                    type="hidden"
+                                    name="_method"
+                                    value="POST"
+                                /><input
+                                    type="hidden"
+                                    name="data[_Token][key]"
+                                    value="5c78811ba6ece190f1db1c222e41ed36a62d169ddcf4aaca12b88de2c36103383df252317046353d8e00c25a1c660fadff63b5881d3ad0185c13f5cf98cded62"
+                                    id="Token1656651864"
+                                    autocomplete="off"
+                                />
+                            </div>
+                            <input
+                                type="hidden"
+                                name="data[UserLanguage][shop_id]"
+                                value="recollevin-base-shop"
+                                id="UserLanguageShopId"
+                            />
+                            <div class="input select required">
+                                <select
+                                    name="data[UserLanguage][language_code]"
+                                    class="x_i18nSelectBox"
+                                    required="required"
+                                >
+                                    <option value="ja" selected="selected">
+                                        日本語
+                                    </option>
+                                    <option value="en">English</option>
+                                </select>
+                            </div>
+                            <div style="display: none">
+                                <input
+                                    type="hidden"
+                                    name="data[_Token][fields]"
+                                    value="a5601a40606572474caa18e651f63d715df21cf6%3AUserLanguage.shop_id"
+                                    id="TokenFields1285722112"
+                                    autocomplete="off"
+                                /><input
+                                    type="hidden"
+                                    name="data[_Token][unlocked]"
+                                    value=""
+                                    id="TokenUnlocked197964508"
+                                    autocomplete="off"
+                                />
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="currency">
+                        <form
+                            action="https://recollevin.base.shop/i18n/i18n_user_currencies/change_currency?back=https%3A%2F%2Fadmin.thebase.com%2Fshop_preview%2Fb6f9a14411f86bf7848fdc93b4eb26f3%2Fcategories%2F6470179"
+                            method="post"
+                            accept-charset="utf-8"
+                        >
+                            <div style="display: none">
+                                <input
+                                    type="hidden"
+                                    name="_method"
+                                    value="POST"
+                                /><input
+                                    type="hidden"
+                                    name="data[_Token][key]"
+                                    value="5c78811ba6ece190f1db1c222e41ed36a62d169ddcf4aaca12b88de2c36103383df252317046353d8e00c25a1c660fadff63b5881d3ad0185c13f5cf98cded62"
+                                    id="Token1706406093"
+                                    autocomplete="off"
+                                />
+                            </div>
+                            <input
+                                type="hidden"
+                                name="data[UserCurrency][shop_id]"
+                                value="recollevin-base-shop"
+                                id="UserCurrencyShopId"
+                            />
+                            <div class="input select">
+                                <select
+                                    name="data[UserCurrency][currency_code]"
+                                    class="x_i18nSelectBox"
+                                >
+                                    <option value="JPY" selected="selected">
+                                        JPY
+                                    </option>
+                                    <option value="USD">USD</option>
+                                    <option value="EUR">EUR</option>
+                                </select>
+                            </div>
+                            <div style="display: none">
+                                <input
+                                    type="hidden"
+                                    name="data[_Token][fields]"
+                                    value="0fb2022364536cce2ecac6ab45a90502e49bcb1c%3AUserCurrency.shop_id"
+                                    id="TokenFields91755716"
+                                    autocomplete="off"
+                                /><input
+                                    type="hidden"
+                                    name="data[_Token][unlocked]"
+                                    value=""
+                                    id="TokenUnlocked1412857071"
+                                    autocomplete="off"
+                                />
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <ul id="appsItemCategoryTag">
+                    <li class="appsItemCategoryTag_child">
+                        <a
+                            href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470179"
+                            class="mainHeaderNavColor"
+                            >BRANDS</a
+                        >
+                        <ul class="appsItemCategoryTag_lowerchild">
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6472944"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >adidas</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470182"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >ARNYS PARIS</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470221"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >Barbour</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470286"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >Berburry's</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470184"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >BONEVILLE</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470185"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >CELINE</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470186"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >Charvet</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470187"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >C.P. COMPANY</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470749"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >Dior</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470188"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >Dries Van Noten</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470194"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >Eskandar</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470190"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >GUCCI</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470191"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >GIORGIO ARMANI</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470189"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >HELMUT LANG</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470195"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >Hermés</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470197"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >JIL SANDER</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470226"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >LACOSTE</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470222"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >Levi's</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470198"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >Maison Martin Margiela</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470199"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >Marithé + François Girbaud</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470224"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >NIKE</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470200"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >PRADA / Miu Miu</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470201"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >SHRIN GUILD</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470202"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >STONE ISLAND</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470203"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >Yves Saint Laurent</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470211"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >W.&amp;.L.T. Wild And Lethal Trash</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470227"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >Euro Vintage</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470229"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >Military Item</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470215"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >other</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="appsItemCategoryTag_child">
+                        <a
+                            href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/5661357"
+                            class="mainHeaderNavColor"
+                            >Item</a
+                        >
+                        <ul class="appsItemCategoryTag_lowerchild">
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/5661361"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >Outerwear</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/5661358"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >Tops</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/5661363"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >Bottoms</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/5661365"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >Shoes</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/5661364"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                >
+                                    Accessory / Bag</a
+                                >
+                            </li>
+                            <li>
+                                <a
+                                    href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/categories/6470178"
+                                    class="mainHeaderNavColor appsItemCategoryTag_lowerLink"
+                                    >Ladies</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <form
+                    action="//admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/search"
+                    method="get"
+                >
+                    <input
+                        type="text"
+                        name="q"
+                        placeholder="商品を検索"
+                        value=""
+                    />
+                    <button type="submit">検索</button>
+                </form>
+            </nav>
+            <div id="mask"></div>
+        </header>
+
+        <!-- {block:IndexPageCategory} -->
+        <!-- カテゴリーページで出力 -->
+        <div class="blog" id="page">
+            <link
+                rel="stylesheet"
+                type="text/css"
+                href="https://cf-baseassets.thebase.in/5b93f5ddacc6a64d1896dc4de8182a1d/asset/shop/blog/blog_list-71eccc00b8ad055bf753.css"
+            />
+            <div class="main">
+                <div
+                    id="about"
+                    itemscope=""
+                    itemtype="http://schema.org/Article"
+                    class="blogListMain"
+                >
+                    <div class="blog_inner">
+                        <div class="blog_title">
+                            <h2 itemprop="name">
+                                <a
+                                    href="https://recollevin.base.shop/blog/2025/07/25/174641"
+                                    >Buying Trip in Paris</a
+                                >
+                            </h2>
+                        </div>
+                        <div class="blog_publish">
+                            <p
+                                class="publish_date"
+                                itemprop="dateModified"
+                                content="2025/07/25 17:46"
+                            >
+                                2025/07/25 17:46
+                            </p>
+                        </div>
+                        <div class="blog_head_image">
+                            <a
+                                href="https://recollevin.base.shop/blog/2025/07/25/174641"
+                                ><img
+                                    src="https://base-ec2.akamaized.net/images/user/blog/2158003/blog/e09e839daba605ed002898011c97dd79.jpg"
+                                    alt="Buying Trip in Paris"
+                            /></a>
+                        </div>
+                        <div class="blog_contents">
+                            <div class="blog_body" itemprop="description">
+                                <p class="text">
+                                    5月末はイタリア／パリへの買付へ。実はアナウンスしておりませんでしたが、その約2週間後に、再びイタリアへ10日ほどの買付旅に出ておりました。そして今回は、パリに10日ほど。こうして月に一度のペースで海外...
+                                </p>
+                            </div>
+                            <div class="read_more">
+                                <a
+                                    href="https://recollevin.base.shop/blog/2025/07/25/174641"
+                                    >続きを読む</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog_inner">
+                        <div class="blog_title">
+                            <h2 itemprop="name">
+                                <a
+                                    href="https://recollevin.base.shop/blog/2025/07/12/192444"
+                                    >【連載】上質と暮らす
+                                    Vol.3　重たいのに、軽やか。─Hermèsのバッファローレザーが語るもの。</a
+                                >
+                            </h2>
+                        </div>
+                        <div class="blog_publish">
+                            <p
+                                class="publish_date"
+                                itemprop="dateModified"
+                                content="2025/07/12 19:24"
+                            >
+                                2025/07/12 19:24
+                            </p>
+                        </div>
+                        <div class="blog_head_image">
+                            <a
+                                href="https://recollevin.base.shop/blog/2025/07/12/192444"
+                                ><img
+                                    src="https://base-ec2.akamaized.net/images/user/blog/2158003/blog/a4a6463fd218ebdbfdc2717ea0d453ea.jpg"
+                                    alt="【連載】上質と暮らす Vol.3　重たいのに、軽やか。─Hermèsのバッファローレザーが語るもの。"
+                            /></a>
+                        </div>
+                        <div class="blog_contents">
+                            <div class="blog_body" itemprop="description">
+                                <p class="text">
+                                    2001年頃に仕立てられたこのジャケットは、Hermès
+                                    Hommeのヴェロニク・ニシャニアンが手がけた作品。素材に選ばれたのは、バッファローレザー──つまり水牛の革だ。牛革の中でも流通量が少なく、ファッションの表...
+                                </p>
+                            </div>
+                            <div class="read_more">
+                                <a
+                                    href="https://recollevin.base.shop/blog/2025/07/12/192444"
+                                    >続きを読む</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog_inner">
+                        <div class="blog_title">
+                            <h2 itemprop="name">
+                                <a
+                                    href="https://recollevin.base.shop/blog/2025/07/04/145656"
+                                    >あーだこーだ</a
+                                >
+                            </h2>
+                        </div>
+                        <div class="blog_publish">
+                            <p
+                                class="publish_date"
+                                itemprop="dateModified"
+                                content="2025/07/04 14:56"
+                            >
+                                2025/07/04 14:56
+                            </p>
+                        </div>
+                        <div class="blog_head_image">
+                            <a
+                                href="https://recollevin.base.shop/blog/2025/07/04/145656"
+                                ><img
+                                    src="https://base-ec2.akamaized.net/images/user/blog/2158003/blog/f7e279a0b1dc1f5a05340eedf56875e4.jpg"
+                                    alt="あーだこーだ"
+                            /></a>
+                        </div>
+                        <div class="blog_contents">
+                            <div class="blog_body" itemprop="description">
+                                <p class="text">
+                                    "ARNYS(アルニス)"のバル・カラー。好きなんですよね。襟同士に少し距離があって、台襟があって、ふわっとカーブを描いて落ちていく、ちょっと大振りの襟。同じくフランスの名門テーラーである某Cのショルダー・...
+                                </p>
+                            </div>
+                            <div class="read_more">
+                                <a
+                                    href="https://recollevin.base.shop/blog/2025/07/04/145656"
+                                    >続きを読む</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog_inner">
+                        <div class="blog_title">
+                            <h2 itemprop="name">
+                                <a
+                                    href="https://recollevin.base.shop/blog/2025/07/02/202039"
+                                    >北と南と右と左</a
+                                >
+                            </h2>
+                        </div>
+                        <div class="blog_publish">
+                            <p
+                                class="publish_date"
+                                itemprop="dateModified"
+                                content="2025/07/02 20:20"
+                            >
+                                2025/07/02 20:20
+                            </p>
+                        </div>
+                        <div class="blog_head_image">
+                            <a
+                                href="https://recollevin.base.shop/blog/2025/07/02/202039"
+                                ><img
+                                    src="https://base-ec2.akamaized.net/images/user/blog/2158003/blog/4ffa2e918a37251b6b731f45fbd5d21f.jpg"
+                                    alt="北と南と右と左"
+                            /></a>
+                        </div>
+                        <div class="blog_contents">
+                            <div class="blog_body" itemprop="description">
+                                <p class="text">
+                                    セーヌ川を挟んだ右だの左だの、で例のオレンジ色のメゾンと並び称された、今はなき伝説"ARNYS(アルニス)"。相変わらず通好みであることに間違いはないでしょうが、それでも数年前と比べるとグッと知名度が上がり...
+                                </p>
+                            </div>
+                            <div class="read_more">
+                                <a
+                                    href="https://recollevin.base.shop/blog/2025/07/02/202039"
+                                    >続きを読む</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog_inner">
+                        <div class="blog_title">
+                            <h2 itemprop="name">
+                                <a
+                                    href="https://recollevin.base.shop/blog/2025/06/28/214125"
+                                    >POP-UP STORE Osaka</a
+                                >
+                            </h2>
+                        </div>
+                        <div class="blog_publish">
+                            <p
+                                class="publish_date"
+                                itemprop="dateModified"
+                                content="2025/06/28 21:41"
+                            >
+                                2025/06/28 21:41
+                            </p>
+                        </div>
+                        <div class="blog_head_image">
+                            <a
+                                href="https://recollevin.base.shop/blog/2025/06/28/214125"
+                                ><img
+                                    src="https://base-ec2.akamaized.net/images/user/blog/2158003/blog/b60e1bc0a695d9685c5c9b0f36c4392c.jpg"
+                                    alt="POP-UP STORE Osaka"
+                            /></a>
+                        </div>
+                        <div class="blog_contents">
+                            <div class="blog_body" itemprop="description">
+                                <p class="text">
+                                    【POP-UP
+                                    OSAKA】本日より、大阪でのポップアップストアが幕を開けました。初日から足を運んでくださった皆さま、本当にありがとうございます。約1年ぶりとなる大阪での開催。今回の大きな違いは、東京店の存在。...
+                                </p>
+                            </div>
+                            <div class="read_more">
+                                <a
+                                    href="https://recollevin.base.shop/blog/2025/06/28/214125"
+                                    >続きを読む</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog_inner">
+                        <div class="blog_title">
+                            <h2 itemprop="name">
+                                <a
+                                    href="https://recollevin.base.shop/blog/2025/06/13/230946"
+                                    >嘘つきの独り言</a
+                                >
+                            </h2>
+                        </div>
+                        <div class="blog_publish">
+                            <p
+                                class="publish_date"
+                                itemprop="dateModified"
+                                content="2025/06/13 23:09"
+                            >
+                                2025/06/13 23:09
+                            </p>
+                        </div>
+                        <div class="blog_head_image">
+                            <a
+                                href="https://recollevin.base.shop/blog/2025/06/13/230946"
+                                ><img
+                                    src="https://base-ec2.akamaized.net/images/user/blog/2158003/blog/73359703133a70ae500c30629e2c6078.jpg"
+                                    alt="嘘つきの独り言"
+                            /></a>
+                        </div>
+                        <div class="blog_contents">
+                            <div class="blog_body" itemprop="description">
+                                <p class="text">
+                                    スーツ三大国には数えられないフランス。それでもなぜだかフレンチ・テーラリングというものに首ったけなんです。ごめんなさい嘘をつきました。フレンチ・テーラリングだと随分と多くのものが引っかかってしまい...
+                                </p>
+                            </div>
+                            <div class="read_more">
+                                <a
+                                    href="https://recollevin.base.shop/blog/2025/06/13/230946"
+                                    >続きを読む</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog_inner">
+                        <div class="blog_title">
+                            <h2 itemprop="name">
+                                <a
+                                    href="https://recollevin.base.shop/blog/2025/06/10/172057"
+                                    >エスプリ効かせときました。勝手に。</a
+                                >
+                            </h2>
+                        </div>
+                        <div class="blog_publish">
+                            <p
+                                class="publish_date"
+                                itemprop="dateModified"
+                                content="2025/06/10 17:20"
+                            >
+                                2025/06/10 17:20
+                            </p>
+                        </div>
+                        <div class="blog_head_image">
+                            <a
+                                href="https://recollevin.base.shop/blog/2025/06/10/172057"
+                                ><img
+                                    src="https://base-ec2.akamaized.net/images/user/blog/2158003/blog/36ed2763f27725eb37b2c3da453e0fac.png"
+                                    alt="エスプリ効かせときました。勝手に。"
+                            /></a>
+                        </div>
+                        <div class="blog_contents">
+                            <div class="blog_body" itemprop="description">
+                                <p class="text">
+                                    ファッション大国たるフランス。オートクチュールやコレクションという概念を生み出し、現代におけるファッションの礎を築いたと言っても過言ではないでしょう。世界最古のシャツ店であるCHARVET(シャルべ)もその...
+                                </p>
+                            </div>
+                            <div class="read_more">
+                                <a
+                                    href="https://recollevin.base.shop/blog/2025/06/10/172057"
+                                    >続きを読む</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog_inner">
+                        <div class="blog_title">
+                            <h2 itemprop="name">
+                                <a
+                                    href="https://recollevin.base.shop/blog/2025/06/08/175014"
+                                    >心地よい違和感。</a
+                                >
+                            </h2>
+                        </div>
+                        <div class="blog_publish">
+                            <p
+                                class="publish_date"
+                                itemprop="dateModified"
+                                content="2025/06/08 17:50"
+                            >
+                                2025/06/08 17:50
+                            </p>
+                        </div>
+                        <div class="blog_head_image">
+                            <a
+                                href="https://recollevin.base.shop/blog/2025/06/08/175014"
+                                ><img
+                                    src="https://base-ec2.akamaized.net/images/user/blog/2158003/blog/de54822a7522d16a1574fe567c1dd71c.jpg"
+                                    alt="心地よい違和感。"
+                            /></a>
+                        </div>
+                        <div class="blog_contents">
+                            <div class="blog_body" itemprop="description">
+                                <p class="text">
+                                    この一着を見た時、感じた違和感。台襟に施されるはずの第一釦が下にずらされていたり、存在するはずの背面ヨークがなかったり、カフスがすっきりとコンパクトであったり、前身頃だけが随分と短かったり、そもそ...
+                                </p>
+                            </div>
+                            <div class="read_more">
+                                <a
+                                    href="https://recollevin.base.shop/blog/2025/06/08/175014"
+                                    >続きを読む</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog_inner">
+                        <div class="blog_title">
+                            <h2 itemprop="name">
+                                <a
+                                    href="https://recollevin.base.shop/blog/2025/06/03/170516"
+                                    >袖裏地を着るというロマン。</a
+                                >
+                            </h2>
+                        </div>
+                        <div class="blog_publish">
+                            <p
+                                class="publish_date"
+                                itemprop="dateModified"
+                                content="2025/06/03 17:05"
+                            >
+                                2025/06/03 17:05
+                            </p>
+                        </div>
+                        <div class="blog_head_image">
+                            <a
+                                href="https://recollevin.base.shop/blog/2025/06/03/170516"
+                                ><img
+                                    src="https://base-ec2.akamaized.net/images/user/blog/2158003/blog/aedd968e0b4489e264be87e4554cead9.jpg"
+                                    alt="袖裏地を着るというロマン。"
+                            /></a>
+                        </div>
+                        <div class="blog_contents">
+                            <div class="blog_body" itemprop="description">
+                                <p class="text">
+                                    当店ではよく取り扱っておりますHERMESというメゾン。一族がデザインをしている時も、外部からデザイナーを招聘してからも、メンズ/レディース問わず、数多くの名作を生み出してきました。というか名の知れ渡った...
+                                </p>
+                            </div>
+                            <div class="read_more">
+                                <a
+                                    href="https://recollevin.base.shop/blog/2025/06/03/170516"
+                                    >続きを読む</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog_inner">
+                        <div class="blog_title">
+                            <h2 itemprop="name">
+                                <a
+                                    href="https://recollevin.base.shop/blog/2025/05/25/024425"
+                                    >【買い付け旅日記｜Final 】</a
+                                >
+                            </h2>
+                        </div>
+                        <div class="blog_publish">
+                            <p
+                                class="publish_date"
+                                itemprop="dateModified"
+                                content="2025/05/25 02:44"
+                            >
+                                2025/05/25 02:44
+                            </p>
+                        </div>
+                        <div class="blog_head_image">
+                            <a
+                                href="https://recollevin.base.shop/blog/2025/05/25/024425"
+                                ><img
+                                    src="https://base-ec2.akamaized.net/images/user/blog/2158003/blog/ba570259c49305a59db761c17aa20ee7.jpg"
+                                    alt="【買い付け旅日記｜Final 】"
+                            /></a>
+                        </div>
+                        <div class="blog_contents">
+                            <div class="blog_body" itemprop="description">
+                                <p class="text">
+                                    - Paris to Kumamoto
+                                    -&nbsp;買い付け中、否それに限らず見知らぬ土地を歩く際は五感でその土地を感じるのが好きなもので、極力イヤホンなんかは耳に置かないようにしています。とはいえ、長時間のフライトや電車...
+                                </p>
+                            </div>
+                            <div class="read_more">
+                                <a
+                                    href="https://recollevin.base.shop/blog/2025/05/25/024425"
+                                    >続きを読む</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog_inner">
+                        <div class="blog_title">
+                            <h2 itemprop="name">
+                                <a
+                                    href="https://recollevin.base.shop/blog/2025/05/22/205910"
+                                    >【買い付け旅日記｜vol.2】</a
+                                >
+                            </h2>
+                        </div>
+                        <div class="blog_publish">
+                            <p
+                                class="publish_date"
+                                itemprop="dateModified"
+                                content="2025/05/22 20:59"
+                            >
+                                2025/05/22 20:59
+                            </p>
+                        </div>
+                        <div class="blog_head_image">
+                            <a
+                                href="https://recollevin.base.shop/blog/2025/05/22/205910"
+                                ><img
+                                    src="https://base-ec2.akamaized.net/images/user/blog/2158003/blog/adbf11656c2195d6ee6944eeaadfd80a.jpg"
+                                    alt="【買い付け旅日記｜vol.2】"
+                            /></a>
+                        </div>
+                        <div class="blog_contents">
+                            <div class="blog_body" itemprop="description">
+                                <p class="text">
+                                    - Merci beaucoup Paris !
+                                    -ただいま，離陸前の飛行機の中で備忘録を綴っております。全ての買い付けの旅程が終了し、大きな安堵感とともに早く皆様にお披露目したいと言う高揚感で頭がおかしくなっちゃいそうな...
+                                </p>
+                            </div>
+                            <div class="read_more">
+                                <a
+                                    href="https://recollevin.base.shop/blog/2025/05/22/205910"
+                                    >続きを読む</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog_inner">
+                        <div class="blog_title">
+                            <h2 itemprop="name">
+                                <a
+                                    href="https://recollevin.base.shop/blog/2025/05/19/162055"
+                                    >【買い付け旅日記｜vol.1】</a
+                                >
+                            </h2>
+                        </div>
+                        <div class="blog_publish">
+                            <p
+                                class="publish_date"
+                                itemprop="dateModified"
+                                content="2025/05/19 16:20"
+                            >
+                                2025/05/19 16:20
+                            </p>
+                        </div>
+                        <div class="blog_head_image">
+                            <a
+                                href="https://recollevin.base.shop/blog/2025/05/19/162055"
+                                ><img
+                                    src="https://base-ec2.akamaized.net/images/user/blog/2158003/blog/33ba30980081fa60179852c7e95d1681.jpg"
+                                    alt="【買い付け旅日記｜vol.1】"
+                            /></a>
+                        </div>
+                        <div class="blog_contents">
+                            <div class="blog_body" itemprop="description">
+                                <p class="text">
+                                    –
+                                    成田からイタリアへ。–&nbsp;先日よりイタリアに来ています。イタリア素敵な街です。緑豊かで、その中にテラコッタカラーの煉瓦作りの建物がすごく映えて、たくさんの笑顔が溢れ、陽だまりのような優しさが漂う...
+                                </p>
+                            </div>
+                            <div class="read_more">
+                                <a
+                                    href="https://recollevin.base.shop/blog/2025/05/19/162055"
+                                    >続きを読む</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog_inner">
+                        <div class="blog_title">
+                            <h2 itemprop="name">
+                                <a
+                                    href="https://recollevin.base.shop/blog/2025/05/14/184528"
+                                    >【5/18 Sun】 RECOLLECTION at VENDORS</a
+                                >
+                            </h2>
+                        </div>
+                        <div class="blog_publish">
+                            <p
+                                class="publish_date"
+                                itemprop="dateModified"
+                                content="2025/05/14 18:47"
+                            >
+                                2025/05/14 18:47
+                            </p>
+                        </div>
+                        <div class="blog_head_image">
+                            <a
+                                href="https://recollevin.base.shop/blog/2025/05/14/184528"
+                                ><img
+                                    src="https://base-ec2.akamaized.net/images/user/blog/2158003/blog/c10d19ce76c0cc7b7dd2714adaf11538.jpg"
+                                    alt="【5/18 Sun】 RECOLLECTION at VENDORS"
+                            /></a>
+                        </div>
+                        <div class="blog_contents">
+                            <div class="blog_body" itemprop="description">
+                                <p class="text">
+                                    随分とblogを書くのが久しぶりになってしまいました、、RECOLLECTION
+                                    の村上です。初めましての方は、初めまして。覚えていてくださった方、覚えていてくださって有難うございます、、さて今回は(今回も？)、イベ...
+                                </p>
+                            </div>
+                            <div class="read_more">
+                                <a
+                                    href="https://recollevin.base.shop/blog/2025/05/14/184528"
+                                    >続きを読む</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog_inner">
+                        <div class="blog_title">
+                            <h2 itemprop="name">
+                                <a
+                                    href="https://recollevin.base.shop/blog/2025/05/12/004434"
+                                    >天邪鬼。</a
+                                >
+                            </h2>
+                        </div>
+                        <div class="blog_publish">
+                            <p
+                                class="publish_date"
+                                itemprop="dateModified"
+                                content="2025/05/12 00:44"
+                            >
+                                2025/05/12 00:44
+                            </p>
+                        </div>
+                        <div class="blog_head_image">
+                            <a
+                                href="https://recollevin.base.shop/blog/2025/05/12/004434"
+                                ><img
+                                    src="https://base-ec2.akamaized.net/images/user/blog/2158003/blog/88a91e9e6a19d66b10591dad97adaa20.png"
+                                    alt="天邪鬼。"
+                            /></a>
+                        </div>
+                        <div class="blog_contents">
+                            <div class="blog_body" itemprop="description">
+                                <p class="text">
+                                    「私はいつも、完璧に合理的な服がどこか怖かった。少し不完全なものの方が人間らしいと思うの。」90年代後半から2000年代初頭に、それまでチープとされていたナイロンをはじめとする化学繊維をラグジュアリーの...
+                                </p>
+                            </div>
+                            <div class="read_more">
+                                <a
+                                    href="https://recollevin.base.shop/blog/2025/05/12/004434"
+                                    >続きを読む</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="blog_inner">
+                        <div class="blog_title">
+                            <h2 itemprop="name">
+                                <a
+                                    href="https://recollevin.base.shop/blog/2025/05/08/085912"
+                                    >【EVENT INFORMATION】</a
+                                >
+                            </h2>
+                        </div>
+                        <div class="blog_publish">
+                            <p
+                                class="publish_date"
+                                itemprop="dateModified"
+                                content="2025/05/08 08:59"
+                            >
+                                2025/05/08 08:59
+                            </p>
+                        </div>
+                        <div class="blog_head_image">
+                            <a
+                                href="https://recollevin.base.shop/blog/2025/05/08/085912"
+                                ><img
+                                    src="https://base-ec2.akamaized.net/images/user/blog/2158003/blog/211d3aae05c68f149da2147e6a4a2488.jpg"
+                                    alt="【EVENT INFORMATION】"
+                            /></a>
+                        </div>
+                        <div class="blog_contents">
+                            <div class="blog_body" itemprop="description">
+                                <p class="text">
+                                    【EVENT INFORMATION】“POP-UP STORE at
+                                    SHIBUYA”このたび、5月10日（土）から12日（月）までの3日間、渋谷・神南にある《TUNAGI
+                                    JAPAN》にて、recollection_vintageのポップアップイベントを開催いたします。※re...
+                                </p>
+                            </div>
+                            <div class="read_more">
+                                <a
+                                    href="https://recollevin.base.shop/blog/2025/05/08/085912"
+                                    >続きを読む</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="paginate-wrp clearfix">
+                        <ul class="paginate">
+                            <li class="current"><a>1</a></li>
+                            <li><a href="/blog?page=2">2</a></li>
+                            <li><a href="/blog?page=3">3</a></li>
+                            <li class="next">
+                                <a href="/blog?page=2" rel="next"
+                                    >次 &gt;&gt;</a
+                                >
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <ul>
+                <li>
+                    <a
+                        href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/privacy"
+                        >プライバシーポリシー</a
+                    >
+                </li>
+                <li>
+                    <a
+                        href="https://admin.thebase.com/shop_preview/b6f9a14411f86bf7848fdc93b4eb26f3/law"
+                        >特定商取引法に基づく表記</a
+                    >
+                </li>
+            </ul>
+            <div class="copyright">
+                <small>© recollection vintage All rights reserved.</small>
+            </div>
+        </footer>
+    </body>
+
+    <script src="scripts/humberger-menu.js"></script>
+</html>
