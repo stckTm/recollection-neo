@@ -1121,7 +1121,6 @@ html {
 .categoryPage .breadcrumb-container {
   background-color: #f5f4f2;
   width: 90%;
-  position: fixed;
   z-index: 100;
   right: 0;
   transform: translateX(-5%);
@@ -1162,7 +1161,7 @@ html {
   justify-content: space-between;
   align-items: baseline;
   margin: 0 auto;
-  padding-top: 5vh;
+  padding-top: 1vh;
 }
 .categoryPage .childCategoryList01 > li {
   padding: 10px;

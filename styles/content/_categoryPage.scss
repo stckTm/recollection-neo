@@ -1,5 +1,4 @@
 @use "../variables/variables" as *;
-@use "../variables/_variables" as *;
 
 .categoryPage {
     text-align: center;
@@ -20,7 +19,7 @@
         background-color: $cBackground;
         width: 90%;
 
-        position: fixed;
+        // position: fixed;
         z-index: 100;
         right: 0;
         transform: translateX(-5%);
@@ -67,7 +66,7 @@
         align-items: baseline;
         // flex-wrap: wrap;
         margin: 0 auto;
-        padding-top: 5vh;
+        padding-top: 1vh;
 
         > li {
             padding: 10px;
