@@ -1,0 +1,33 @@
+@use "../variables/variables" as *;
+
+.blog {
+    .blog_contents {
+        width: 100%;
+        text-align: center;
+
+        .blog_title {
+            margin-top: 3em;
+        }
+    }
+
+    .blog_body {
+        width: 90% !important;
+        margin: 0 auto;
+        // text-align: center;
+
+        div {
+            width: 100%;
+            margin: 0 auto;
+
+            p {
+                // text-align: start;
+            }
+
+            img {
+                width: 80%;
+                margin: 10% 0;
+                max-width: 500px !important;
+            }
+        }
+    }
+}

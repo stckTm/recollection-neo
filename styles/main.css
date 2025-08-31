@@ -2283,4 +2283,156 @@ html {
   .guide .description li {
     text-align: center !important;
   }
+}
+
+* {
+  font-size: 100%;
+  font-weight: 200;
+}
+
+.mainTitle {
+  font-size: 130%;
+  font-weight: 200;
+}
+
+.subTitle {
+  font-size: 110% !important;
+  font-weight: 200 !important;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-45vw);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(-45vw);
+    opacity: 0;
+  }
+}
+@keyframes hero-change {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 20%, 30% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 0;
+  }
+}
+/* 右向き ▶︎ */
+.triangle {
+  background-color: #505050;
+  height: 8.6602540378px;
+  width: 5px;
+  -webkit-clip-path: polygon(0 0, 100% 50%, 0 100%);
+          clip-path: polygon(0 0, 100% 50%, 0 100%);
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+html {
+  color: #505050;
+  font-style: normal;
+  font-family: "Roboto Slab", "Noto Serif JP", monospace, serif !important;
+  font-optical-sizing: auto;
+  background-color: #f5f4f2 !important;
+}
+
+.logoText {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+#page {
+  width: 95%;
+  margin: 0 auto;
+  margin-top: 60px;
+  min-height: 75vh;
+  overflow-x: hidden;
+  background-color: #f5f4f2 !important;
+}
+
+.informationBanner {
+  position: fixed;
+  top: 60px;
+}
+
+.itemSearchBox .itemSearch {
+  width: 90%;
+  margin: 0 auto;
+  border: none !important;
+  border-bottom: solid 1px rgba(191, 191, 191, 0.6) !important;
+}
+
+.itemSearchBox .itemSearch__form {
+  display: flex !important;
+  flex-direction: row !important;
+  height: 30px !important;
+  width: 100% !important;
+  margin: 0 auto !important;
+  background-color: #f5f4f2;
+}
+
+.itemSearchBox .itemSearch__field {
+  width: 80% !important;
+  height: 30px !important;
+  border: none !important;
+  padding: 7px !important;
+  box-shadow: none !important;
+  background-color: #f5f4f2;
+}
+
+.itemSearchBox .itemSearch__field:focus-visible {
+  outline: none !important;
+}
+
+.itemSearchBox .itemSearch__btn {
+  width: 20% !important;
+  text-align: center;
+  transition: all 0.6s ease;
+}
+
+.itemSearchBox .itemSearch__btn:hover {
+  transform: scale(1.1);
+}
+
+.itemSearchBox .itemSearch__btn img {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+#mainContaint {
+  background-color: #f5f4f2 !important;
+}
+
+.blog .blog_contents {
+  width: 100%;
+  text-align: center;
+}
+.blog .blog_contents .blog_title {
+  margin-top: 3em;
+}
+.blog .blog_body {
+  width: 90% !important;
+  margin: 0 auto;
+}
+.blog .blog_body div {
+  width: 100%;
+  margin: 0 auto;
+}
+.blog .blog_body div img {
+  width: 80%;
+  margin: 10% 0;
+  max-width: 500px !important;
 }/*# sourceMappingURL=main.css.map */
