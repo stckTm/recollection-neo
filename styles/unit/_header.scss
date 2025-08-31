@@ -145,29 +145,41 @@ header {
                     }
                 }
             }
-        }
 
-        .navFooter {
-            display: flex;
-            flex-direction: column;
-            height: 15svh;
-            justify-content: space-between;
-            width: 100%;
-
-            // text-align: start;
-
-            .contactList {
+            .contactList ul {
                 display: flex;
                 flex-direction: row;
-                width: 100%;
+                width: 90%;
+                margin: 0 auto;
                 justify-content: space-between;
                 align-items: left;
-                // text-align: start;
 
                 img {
                     width: 30px;
                     height: 30px;
                 }
+            }
+        }
+
+        .navFooter {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+            gap: 10px 0;
+            @include fontSmall;
+
+            .navLinks2 {
+                display: flex;
+                gap: 15px 0;
+                flex-direction: column;
+            }
+
+            .navLinks3 {
+                display: flex;
+                gap: 10px 0;
+                flex-direction: column;
+                @include fontSmaller;
             }
 
             #i18 {

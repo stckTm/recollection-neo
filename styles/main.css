@@ -16,7 +16,7 @@
 
 @keyframes slideIn {
   from {
-    transform: translateX(-45vw);
+    transform: translateX(-50vw);
     opacity: 0;
   }
   to {
@@ -30,7 +30,7 @@
     opacity: 1;
   }
   to {
-    transform: translateX(-45vw);
+    transform: translateX(-50vw);
     opacity: 0;
   }
 }
@@ -189,7 +189,7 @@ header nav {
   background-color: #f5f4f2;
   border-top: solid 1px rgba(80, 80, 80, 0.6);
   padding: 3vw 5vw 90px;
-  width: 45vw;
+  width: 50vw;
   height: calc(100svh - 60px);
   display: flex;
   flex-direction: column;
@@ -229,9 +229,9 @@ header nav .navLinks li .navLinks-category__medium.category-open {
   display: block;
   position: absolute;
   top: 0;
-  left: 45vw;
+  left: 50vw;
   height: calc(100svh - 60px);
-  width: 55vw;
+  width: 50vw;
   padding: 40px 30px 150px;
   background-color: #f5f4f2;
   border-left: solid 1px rgba(80, 80, 80, 0.6);
@@ -249,23 +249,38 @@ header nav .navLinks li .navLinks-category__medium.category-open::-webkit-scroll
   background: rgba(80, 80, 80, 0.3);
   border-radius: 10px;
 }
-header nav .navFooter {
-  display: flex;
-  flex-direction: column;
-  height: 15svh;
-  justify-content: space-between;
-  width: 100%;
-}
-header nav .navFooter .contactList {
+header nav .navLinks .contactList ul {
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   justify-content: space-between;
   align-items: left;
 }
-header nav .navFooter .contactList img {
+header nav .navLinks .contactList ul img {
   width: 30px;
   height: 30px;
+}
+header nav .navFooter {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  gap: 10px 0;
+  font-size: 90% !important;
+  font-weight: 200 !important;
+}
+header nav .navFooter .navLinks2 {
+  display: flex;
+  gap: 15px 0;
+  flex-direction: column;
+}
+header nav .navFooter .navLinks3 {
+  display: flex;
+  gap: 10px 0;
+  flex-direction: column;
+  font-size: 80% !important;
+  font-weight: 100 !important;
 }
 header nav .navFooter #i18 {
   display: flex;
@@ -323,7 +338,7 @@ header #mask.active {
   display: block;
   opacity: 1;
   transform: translateX(0);
-  left: 45vw;
+  left: 50vw;
 }
 
 .PC-header {
@@ -415,7 +430,7 @@ header #mask.active {
 
 @keyframes slideIn {
   from {
-    transform: translateX(-45vw);
+    transform: translateX(-50vw);
     opacity: 0;
   }
   to {
@@ -429,7 +444,7 @@ header #mask.active {
     opacity: 1;
   }
   to {
-    transform: translateX(-45vw);
+    transform: translateX(-50vw);
     opacity: 0;
   }
 }
@@ -572,7 +587,7 @@ footer .copyright {
 
 @keyframes slideIn {
   from {
-    transform: translateX(-45vw);
+    transform: translateX(-50vw);
     opacity: 0;
   }
   to {
@@ -586,7 +601,7 @@ footer .copyright {
     opacity: 1;
   }
   to {
-    transform: translateX(-45vw);
+    transform: translateX(-50vw);
     opacity: 0;
   }
 }
@@ -781,7 +796,7 @@ html {
 
 @keyframes slideIn {
   from {
-    transform: translateX(-45vw);
+    transform: translateX(-50vw);
     opacity: 0;
   }
   to {
@@ -795,7 +810,7 @@ html {
     opacity: 1;
   }
   to {
-    transform: translateX(-45vw);
+    transform: translateX(-50vw);
     opacity: 0;
   }
 }
@@ -977,7 +992,7 @@ html {
 
 @keyframes slideIn {
   from {
-    transform: translateX(-45vw);
+    transform: translateX(-50vw);
     opacity: 0;
   }
   to {
@@ -991,7 +1006,7 @@ html {
     opacity: 1;
   }
   to {
-    transform: translateX(-45vw);
+    transform: translateX(-50vw);
     opacity: 0;
   }
 }
@@ -1201,7 +1216,7 @@ html {
 
 @keyframes slideIn {
   from {
-    transform: translateX(-45vw);
+    transform: translateX(-50vw);
     opacity: 0;
   }
   to {
@@ -1215,7 +1230,7 @@ html {
     opacity: 1;
   }
   to {
-    transform: translateX(-45vw);
+    transform: translateX(-50vw);
     opacity: 0;
   }
 }
@@ -1645,7 +1660,7 @@ html {
 
 @keyframes slideIn {
   from {
-    transform: translateX(-45vw);
+    transform: translateX(-50vw);
     opacity: 0;
   }
   to {
@@ -1659,7 +1674,7 @@ html {
     opacity: 1;
   }
   to {
-    transform: translateX(-45vw);
+    transform: translateX(-50vw);
     opacity: 0;
   }
 }
@@ -1934,7 +1949,7 @@ html {
 
 @keyframes slideIn {
   from {
-    transform: translateX(-45vw);
+    transform: translateX(-50vw);
     opacity: 0;
   }
   to {
@@ -1948,7 +1963,7 @@ html {
     opacity: 1;
   }
   to {
-    transform: translateX(-45vw);
+    transform: translateX(-50vw);
     opacity: 0;
   }
 }
@@ -2130,7 +2145,7 @@ html {
 
 @keyframes slideIn {
   from {
-    transform: translateX(-45vw);
+    transform: translateX(-50vw);
     opacity: 0;
   }
   to {
@@ -2144,7 +2159,7 @@ html {
     opacity: 1;
   }
   to {
-    transform: translateX(-45vw);
+    transform: translateX(-50vw);
     opacity: 0;
   }
 }
@@ -2330,7 +2345,7 @@ html {
 
 @keyframes slideIn {
   from {
-    transform: translateX(-45vw);
+    transform: translateX(-50vw);
     opacity: 0;
   }
   to {
@@ -2344,7 +2359,7 @@ html {
     opacity: 1;
   }
   to {
-    transform: translateX(-45vw);
+    transform: translateX(-50vw);
     opacity: 0;
   }
 }

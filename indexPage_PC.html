@@ -126,21 +126,19 @@
     <img id="tracimg" style="display: none" />
 
     <header>
-        <div class="toggle-btn">
+        <div class="toggle-btn active">
             <span></span>
             <span></span>
             <span></span>
         </div>
         <h1 class="logo">
-            <!-- <a href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153"><img class="logoImage" src="https://base-ec2.akamaized.net/images/user/logo/0c2a4393d32b909b30987f737678ea88.png" alt="recollection vintage"></a> -->
+            <!-- <a href="https://recollevin.base.shop"><img class="logoImage" src="https://baseec-img-mng.akamaized.net/images/user/logo/0c2a4393d32b909b30987f737678ea88.png" alt="recollection vintage"></a> -->
 
-            <a
-                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153"
-            >
+            <a href="https://recollevin.base.shop">
                 <span class="logoText"
                     ><img
                         class="logoImage"
-                        src="https://base-ec2.akamaized.net/images/user/logo/0c2a4393d32b909b30987f737678ea88.png"
+                        src="https://baseec-img-mng.akamaized.net/images/user/logo/0c2a4393d32b909b30987f737678ea88.png"
                         alt="recollection vintage"
                 /></span>
             </a>
@@ -162,7 +160,7 @@
                 </li>
                 <li class="cart">
                     <a
-                        href="/shop_preview/5f50966bc955af5c24dda2f5a7850153/items/104049662"
+                        href="https://recollevin.base.shop/cart/add/recollevin-base-shop"
                     >
                         <img
                             src="/img/shop/cart.png"
@@ -207,357 +205,474 @@
             </ul>
         </div>
 
-        <nav style+="">
-            <ul class="navLinks">
-                <!-- 大カテゴリのループ -->
-                <li>
-                    <div class="navLinks-category">
-                        <p>ALL</p>
-                        <div class="triangle"></div>
+        <nav class="active">
+            <div class="navLinks">
+                <div class="itemSearchBox">
+                    <div class="column itemSearch">
+                        <form
+                            id="x_itemSearchForm"
+                            class="itemSearch__form"
+                            action="//recollevin.base.shop/search"
+                            method="get"
+                        >
+                            <input
+                                class="itemSearch__field"
+                                type="text"
+                                name="q"
+                                placeholder="SEARCH"
+                                value=""
+                            />
+                            <button class="itemSearch__btn" type="submit">
+                                <span
+                                    id="x_iconSearch"
+                                    class="mainHeaderNavColor si-search"
+                                    ><img
+                                        src="https://basefile.akamaized.net/recollevin-base-shop/6800bcd530de1/icons8-search-50.png"
+                                /></span>
+                            </button>
+                        </form>
                     </div>
-                    <ul class="navLinks-category__medium">
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
+                </div>
+                <ul>
+                    <!-- 大カテゴリのループ -->
+                    <li>
+                        <a
+                            href="https://recollevin.base.shop/categories/6634622"
+                            class="navLinks-category"
+                        >
+                            <p>New Arrival</p>
+                            <div class="triangle"></div>
+                        </a>
+                        <ul class="navLinks-category__medium">
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6634622"
+                                    >All</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- 大カテゴリのループ -->
+                    <li>
+                        <a
+                            href="https://recollevin.base.shop/categories/5661357"
+                            class="navLinks-category"
+                        >
+                            <p>CATEGORY</p>
+                            <div class="triangle"></div>
+                        </a>
+                        <ul class="navLinks-category__medium">
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/5661357"
+                                    >All</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/5661361"
+                                    >Outerwear</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/5661358"
+                                    >Tops</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/5661363"
+                                    >Bottoms</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/5661365"
+                                    >Shoes</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/5661364"
+                                >
+                                    Accessory / Bag</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6470178"
+                                    >Ladies</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- 大カテゴリのループ -->
+                    <li>
+                        <a
+                            href="https://recollevin.base.shop/categories/6470179"
+                            class="navLinks-category"
+                        >
+                            <p>BRANDS</p>
+                            <div class="triangle"></div>
+                        </a>
+                        <ul class="navLinks-category__medium">
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6470179"
+                                    >All</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6472944"
+                                    >adidas</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6470182"
+                                    >ARNYS PARIS</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6470221"
+                                    >Barbour</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6470286"
+                                    >Burburry's</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6470184"
+                                    >BONEVILLE</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6470185"
+                                    >CÉLINE</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6724426"
+                                    >CHANEL</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6470186"
+                                    >Charvet</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6470187"
+                                    >C.P.COMPANY</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6470749"
+                                    >Dior</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6470188"
+                                    >Dries Van Noten</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6470194"
+                                    >eskandar</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6470190"
+                                    >GUCCI</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6470191"
+                                    >GIORGIO ARMANI</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6470189"
+                                    >HELMUT LANG</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6470195"
+                                    >HERMÈS PARIS</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6470197"
+                                    >JIL SANDER</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6724425"
+                                    >Jean Paul Gaultier</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6843075"
+                                    >KRIS VAN ASSCHE
+                                </a>
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6470226"
+                                    >LACOSTE</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6470222"
+                                    >Levi Strauss &amp; Co.</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6527814"
+                                    >LOEWE</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6470198"
+                                    >Maison Martin Margiela</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6470199"
+                                    >Marithé + François Girbaud</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6724275"
+                                    >Marni</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6470200"
+                                    >PRADA / Miu Miu</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6599124"
+                                    >SERAPHIN</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6470201"
+                                    >SHRIN GUILD</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6470202"
+                                    >STONE ISLAND</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6738017"
+                                    >VALENTINO</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6470203"
+                                    >Yves Saint Laurent</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6470211"
+                                    >W.&amp;.L.T. Wild And Lethal Trash</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6470227"
+                                    >Euro Vintage</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6470229"
+                                    >Military Items</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6470215"
+                                    >Other Items</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- 大カテゴリのループ -->
+                    <li>
+                        <a
+                            href="https://recollevin.base.shop/categories/6560053"
+                            class="navLinks-category"
+                        >
+                            <p>STOCK</p>
+                            <div class="triangle"></div>
+                        </a>
+                        <ul class="navLinks-category__medium">
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6560053"
+                                    >All</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6560056"
+                                    >Tokyo</a
+                                >
+                            </li>
+                            <!-- 中カテゴリのループ -->
+                            <li class="navLinks-category__item">
+                                <a
+                                    href="https://recollevin.base.shop/categories/6560057"
+                                    >Kumamoto</a
+                                >
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="contactList">
+                    <ul>
+                        <li>
                             <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/5661361"
-                                >Outerwear</a
+                                href="https://www.instagram.com/recollection__vintage/"
                             >
+                                <img
+                                    src="https://basefile.akamaized.net/recollevin-base-shop/67e547de5c1ca/icons8-instagram-50.png"
+                                    alt="Instagram account"
+                                />
+                            </a>
                         </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
+                        <li>
                             <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/5661358"
-                                >Tops</a
+                                href="https://www.threads.net/@recollection__vintage?xmt=AQGzdut22EjYbpPjLGazCVvvFVB6EnTV6GC0zL_I28x5KtE"
                             >
+                                <img
+                                    src="https://basefile.akamaized.net/recollevin-base-shop/67e5481beb01d/icons8-threads-50.png"
+                                    alt="Threads Acount"
+                                />
+                            </a>
                         </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
+                        <li>
                             <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/5661363"
-                                >Bottoms</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/5661365"
-                                >Shoes</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/5661364"
-                            >
-                                Accessory / Bag</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6470178"
-                                >Ladies</a
-                            >
+                                href="https://thebase.com/inquiry/recollevin-base-shop"
+                                ><img
+                                    src="https://basefile.akamaized.net/recollevin-base-shop/67e54845b4afe/icons8-E983B5E4BEBFE789A9-50.png"
+                                    alt="CONTACT お問い合わせ"
+                            /></a>
                         </li>
                     </ul>
-                </li>
-                <!-- 大カテゴリのループ -->
-                <li>
-                    <div class="navLinks-category">
-                        <p>STOCK</p>
-                        <div class="triangle"></div>
-                    </div>
-                    <ul class="navLinks-category__medium">
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6560056"
-                                >Tokyo</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6560057"
-                                >Kumamoto</a
-                            >
-                        </li>
-                    </ul>
-                </li>
-                <!-- 大カテゴリのループ -->
-                <li>
-                    <div class="navLinks-category">
-                        <p>BRANDS</p>
-                        <div class="triangle"></div>
-                    </div>
-                    <ul class="navLinks-category__medium">
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6472944"
-                                >adidas</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6470182"
-                                >ARNYS PARIS</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6470221"
-                                >Barbour</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6470286"
-                                >Burburry's</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6470184"
-                                >BONEVILLE</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6470185"
-                                >CÉLINE</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6470186"
-                                >Charvet</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6470187"
-                                >C.P.COMPANY</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6470749"
-                                >Dior</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6470188"
-                                >Dries Van Noten</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6470194"
-                                >eskandar</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6470190"
-                                >GUCCI</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6470191"
-                                >GIORGIO ARMANI</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6470189"
-                                >HELMUT LANG</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6470195"
-                                >HERMÈS PARIS</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6470197"
-                                >JIL SANDER</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6470226"
-                                >LACOSTE</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6470222"
-                                >Levi Strauss &amp; Co.</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6527814"
-                                >LOEWE</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6470198"
-                                >Maison Martin Margiela</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6470199"
-                                >Marithé + François Girbaud</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6599124"
-                                >SERAPHIN</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6470200"
-                                >PRADA / Miu Miu</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6470201"
-                                >SHRIN GUILD</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6470202"
-                                >STONE ISLAND</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6470203"
-                                >Yves Saint Laurent</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6470211"
-                                >W.&amp;.L.T. Wild And Lethal Trash</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6470227"
-                                >Euro Vintage</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6470229"
-                                >Military Items</a
-                            >
-                        </li>
-                        <!-- 中カテゴリのループ -->
-                        <li class="navLinks-category__item">
-                            <a
-                                href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/categories/6470215"
-                                >Other Items</a
-                            >
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a
-                        href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/about"
-                        >About</a
-                    >
-                </li>
-                <li>
-                    <a
-                        href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/blog"
-                        >Blog</a
-                    >
-                </li>
-                <li>
-                    <a
-                        href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/membership"
-                        >RC Mile Club</a
-                    >
-                </li>
-            </ul>
+                </div>
+            </div>
 
             <div class="navFooter">
-                <ul class="contactList">
+                <ul class="navLinks2">
                     <li>
-                        <a
-                            href="https://www.instagram.com/recollection__vintage/"
-                        >
-                            <img
-                                src="https://basefile.akamaized.net/recollevin-base-shop/67e547de5c1ca/icons8-instagram-50.png"
-                                alt="Instagram account"
-                            />
-                        </a>
+                        <a href="https://recollevin.base.shop/about">About</a>
                     </li>
                     <li>
-                        <a
-                            href="https://www.threads.net/@recollection__vintage?xmt=AQGzdut22EjYbpPjLGazCVvvFVB6EnTV6GC0zL_I28x5KtE"
-                        >
-                            <img
-                                src="https://basefile.akamaized.net/recollevin-base-shop/67e5481beb01d/icons8-threads-50.png"
-                                alt="Threads Acount"
-                            />
-                        </a>
+                        <a href="https://recollevin.base.shop/blog">Blog</a>
                     </li>
                     <li>
-                        <a
-                            href="https://admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/inquiry"
-                            ><img
-                                src="https://basefile.akamaized.net/recollevin-base-shop/67e54845b4afe/icons8-E983B5E4BEBFE789A9-50.png"
-                                alt="CONTACT お問い合わせ"
-                        /></a>
+                        <a href="https://recollevin.base.shop/membership"
+                            >RC Mile Club</a
+                        >
+                    </li>
+                </ul>
+                <ul class="navLinks3">
+                    <li>
+                        <a href="https://recollevin.base.shop/privacy"
+                            >プライバシーポリシー</a
+                        >
+                    </li>
+                    <li>
+                        <a href="https://recollevin.base.shop/law"
+                            >特定商取引法に基づく表記</a
+                        >
                     </li>
                 </ul>
                 <div id="i18" class="clearfix">
                     <div class="lang">
                         <form
-                            action="https://recollevin.base.shop/i18n/i18n_user_languages/change_language?back=https%3A%2F%2Fadmin.thebase.com%2Fshop_preview%2F5f50966bc955af5c24dda2f5a7850153%2Fitems%2F104049662"
+                            action="https://recollevin.base.shop/i18n/i18n_user_languages/change_language?back=http%3A%2F%2Frecollevin.base.shop%2F"
                             method="post"
                             accept-charset="utf-8"
                         >
@@ -569,8 +684,8 @@
                                 /><input
                                     type="hidden"
                                     name="data[_Token][key]"
-                                    value="98ed2ad7a22805dc848f1a1803031d6da9549458bb93358a618ca7673daeaba2e0e76ca21f10bef0a084d7a84145843998f8502c7bd80eed98469eb86497ae9e"
-                                    id="Token897304327"
+                                    value="d0a3647aaf13589c853ef3c29308d3b3fd55c176b5891f40b6977169b14daa032d3bf7f390c43cfc9cadf3deed81397da1cf2d51fc999f4aca2a0b624e230c09"
+                                    id="Token734680797"
                                     autocomplete="off"
                                 />
                             </div>
@@ -596,14 +711,14 @@
                                 <input
                                     type="hidden"
                                     name="data[_Token][fields]"
-                                    value="98a2d943dba9b2e72985ea38b5440d04b90388d6%3AUserLanguage.shop_id"
-                                    id="TokenFields1732491042"
+                                    value="b9d372be16ecb467b06728880ced0b516e66455c%3AUserLanguage.shop_id"
+                                    id="TokenFields1107444383"
                                     autocomplete="off"
                                 /><input
                                     type="hidden"
                                     name="data[_Token][unlocked]"
                                     value=""
-                                    id="TokenUnlocked1913264841"
+                                    id="TokenUnlocked2134765265"
                                     autocomplete="off"
                                 />
                             </div>
@@ -612,7 +727,7 @@
 
                     <div class="currency">
                         <form
-                            action="https://recollevin.base.shop/i18n/i18n_user_currencies/change_currency?back=https%3A%2F%2Fadmin.thebase.com%2Fshop_preview%2F5f50966bc955af5c24dda2f5a7850153%2Fitems%2F104049662"
+                            action="https://recollevin.base.shop/i18n/i18n_user_currencies/change_currency?back=http%3A%2F%2Frecollevin.base.shop%2F"
                             method="post"
                             accept-charset="utf-8"
                         >
@@ -624,8 +739,8 @@
                                 /><input
                                     type="hidden"
                                     name="data[_Token][key]"
-                                    value="98ed2ad7a22805dc848f1a1803031d6da9549458bb93358a618ca7673daeaba2e0e76ca21f10bef0a084d7a84145843998f8502c7bd80eed98469eb86497ae9e"
-                                    id="Token512872270"
+                                    value="d0a3647aaf13589c853ef3c29308d3b3fd55c176b5891f40b6977169b14daa032d3bf7f390c43cfc9cadf3deed81397da1cf2d51fc999f4aca2a0b624e230c09"
+                                    id="Token791555766"
                                     autocomplete="off"
                                 />
                             </div>
@@ -651,14 +766,14 @@
                                 <input
                                     type="hidden"
                                     name="data[_Token][fields]"
-                                    value="ca376199e3cd189445120e0bf1b76a442e9bafe9%3AUserCurrency.shop_id"
-                                    id="TokenFields2052198951"
+                                    value="7580cb539d05e1aa0107997be991374726548bf3%3AUserCurrency.shop_id"
+                                    id="TokenFields268342088"
                                     autocomplete="off"
                                 /><input
                                     type="hidden"
                                     name="data[_Token][unlocked]"
                                     value=""
-                                    id="TokenUnlocked1825887072"
+                                    id="TokenUnlocked498145597"
                                     autocomplete="off"
                                 />
                             </div>
@@ -666,39 +781,8 @@
                     </div>
                 </div>
             </div>
-
-            <div class="itemSearchBox">
-                <!-- <form action="//admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/search" method="get">
-          <input type="text" name="q" placeholder="商品を検索" value=""/>
-          <button type="submit"><img src="https://basefile.akamaized.net/recollevin-base-shop/6800bcd530de1/icons8-search-50.png"></button> 
-        </form> -->
-                <div class="column itemSearch">
-                    <form
-                        id="x_itemSearchForm"
-                        class="itemSearch__form"
-                        action="//admin.thebase.com/shop_preview/5f50966bc955af5c24dda2f5a7850153/search"
-                        method="get"
-                    >
-                        <input
-                            class="itemSearch__field"
-                            type="text"
-                            name="q"
-                            placeholder="SEARCH"
-                            value=""
-                        />
-                        <button class="itemSearch__btn" type="submit">
-                            <span
-                                id="x_iconSearch"
-                                class="mainHeaderNavColor si-search"
-                                ><img
-                                    src="https://basefile.akamaized.net/recollevin-base-shop/6800bcd530de1/icons8-search-50.png"
-                            /></span>
-                        </button>
-                    </form>
-                </div>
-            </div>
         </nav>
-        <div id="mask"></div>
+        <div id="mask" class="active"></div>
     </header>
     <div class="PC-header">
         <ul class="navLinks PC-header__left">
