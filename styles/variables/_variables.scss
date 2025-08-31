@@ -1,7 +1,7 @@
 $headerHeight: 60px;
 $breadcrumbHeight: 3vh;
 $HamburgerMenuWidth: 50vw;
-$HamburgerMenuHeight: calc(100vh - #{$headerHeight});
+$HamburgerMenuHeight: calc(100dvh - #{$headerHeight});
 $footerHeight: 1vh;
 $cWhite: #ffffff;
 $cGray: #505050;
